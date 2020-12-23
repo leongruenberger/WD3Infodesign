@@ -32,8 +32,8 @@
 
 <body>
 	<div id="header">
-		<ul id="myMenu">
-			<li data-menuanchor="page1" class="active"><a href="#firstPage">Start</a></li>
+		<ul id="nav">
+			<li data-menuanchor="page1" class="active"><a href="#page1">Start</a></li>
 			<li data-menuanchor="page2"><a href="#page2">Einsatz von KI</a></li>
 			<li data-menuanchor="page3"><a href="#page3">Anwendungsgebiete</a></li>
 			<li data-menuanchor="page4"><a href="#page4">Zeitliche Entwicklung</a></li>
@@ -42,16 +42,33 @@
 		</ul>
 	</div>
 	<div id="fullpage">
-		<div class="section">
+		<div class="section" id="section-1">
 			<h1>Einsatz von <span id="big">künstlicher Intelligenz</span> in der deutschen Wirtschaft</h1>
+			<div>
+				<p class="text-uppercase">Stand der KI-Nutzung im Jahr 2019</p>
+				<p class="text-uppercase">Semesterarbeit Multimediales Informationsdesign des Fachbereichs Onlinemedien
+					2020
+				</p>
+			</div>
 		</div>
-		<div class="section">Einsatz von KI</div>
-		<div class="section">Anwendungsgebiete
+		<div class="section">
+			<h2>Einsatz von KI</h2>
 		</div>
-		<div class="section">Zeitliche Entwicklung</div>
-		<div class="section">Finanzielle Aspekte</div>
-		<div class="section">Umsatz</div>
-		<div class="section">Impressum</div>
+		<div class="section">
+			<h2>Anwendungsgebiete</h2>
+		</div>
+		<div class="section">
+			<h2>Zeitliche Entwicklung</h2>
+		</div>
+		<div class="section">
+			<h2>Finanzielle Aspekte</h2>
+		</div>
+		<div class="section">
+			<h2>Umsatz</h2>
+		</div>
+		<div class="section">
+			<h2>Impressum</h2>
+		</div>
 	</div>
 
 	<script>
@@ -59,6 +76,7 @@
 			//options here
 			autoScrolling: true,
 			scrollHorizontally: true,
+			verticalCentered: false,
 			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
 			sectionsColor: ['#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45'],
 		});
