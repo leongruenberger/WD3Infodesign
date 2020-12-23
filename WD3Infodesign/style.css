@@ -2,7 +2,8 @@
 /* Allgemein */
 * {
   font-family: 'Oswald', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400 !important;
 }
 
 .section {
@@ -18,7 +19,17 @@
 
 h2 {
   color: #a3c4d6 !important;
-  font-weight: 400 !important;
+  font-size: 53px !important;
+  margin-top: 0.7em !important;
+}
+
+h3 {
+  font-size: 30px !important;
+}
+
+h4 {
+  font-size: 22px !important;
+  margin-top: 1.5em !important;
 }
 
 /* Header */
@@ -26,9 +37,8 @@ h2 {
   position: fixed;
   z-index: 1000;
   width: 100vw;
-  font-weight: 300 !important;
   font-size: 1.3em;
-  padding: 2em 7em;
+  padding: 3em 7em;
 }
 
 #header #nav {
@@ -39,7 +49,7 @@ h2 {
 
 #header #nav li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 2em;
 }
 
 #header #nav li .active a {
@@ -48,6 +58,8 @@ h2 {
 
 #header #nav li a {
   color: #429bcc !important;
+  font-size: 20px;
+  font-weight: 300 !important;
 }
 
 #header #nav li a:hover {
@@ -62,7 +74,7 @@ h2 {
 }
 
 #section-1 h1 {
-  padding-top: 250px;
+  padding-top: 200px;
   font-weight: 400 !important;
   color: #a3c4d6 !important;
 }
@@ -74,11 +86,41 @@ h2 {
 
 #section-1 div {
   padding-top: 150px;
-  font-weight: 300 !important;
   font-size: 16px !important;
 }
 
 #section-1 div p {
+  margin: 0;
+  font-weight: 300 !important;
+}
+
+#section-2 div.inner-section {
+  width: 70%;
+}
+
+#section-2 p.intro-text {
+  margin-top: 3em;
+}
+
+#section-2 h3 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#section-2 div.icons div.icon-element {
+  display: inline-block;
+  width: 33%;
+}
+
+#section-2 div.icons div.icon-element img {
+  height: 40px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+#section-2 div.icons div.icon-element p.icon-heading {
+  color: #a3c4d6 !important;
+  font-size: 20px;
   margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
