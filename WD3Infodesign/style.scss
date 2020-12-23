@@ -1,0 +1,44 @@
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+.section {
+  font-size: 3em;
+  padding: 0 3em 0 3em;
+  color: #a3c4d6 !important;
+}
+.content {
+  margin: 50px;
+}
+
+#header {
+  position: fixed;
+  z-index: 1000;
+  /* background-color: white; */
+  width: 100vw;
+  font-weight: 300 !important;
+  font-size: 1.3em;
+  padding: 2em 7em;
+  color: #429bcc !important;
+  background-color: #002c45;
+
+  #myMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+    }
+  }
+}
+
+h1 {
+  font-weight: 400 !important;
+
+  #big {
+    font-size: 150%;
+    display: block;
+  }
+}

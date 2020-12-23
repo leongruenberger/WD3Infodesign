@@ -1,17 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
 	<meta charset="utf-8">
-	<title>Flankr Asset Manager</title>
+	<title>Einsatz von KI in Deutschland – WebDesign-Projekt</title>
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+
+	<!-- Fullpage.js -->
+	<link rel="stylesheet" href="Fullpage.js/fullpage.css">
+	<script src="Fullpage.js/fullpage.js"></script>
+
+	<!-- Chart.js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
+		integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g=="
+		crossorigin="anonymous" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"
+		integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw=="
+		crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<h1>Flankr Asset MAnager</h1>
+	<div id="header">
+		<ul id="myMenu">
+			<li data-menuanchor="page1" class="active"><a href="#firstPage">Start</a></li>
+			<li data-menuanchor="page2"><a href="#page2">Einsatz von KI</a></li>
+			<li data-menuanchor="page3"><a href="#page3">Anwendungsgebiete</a></li>
+			<li data-menuanchor="page4"><a href="#page4">Zeitliche Entwicklung</a></li>
+			<li data-menuanchor="page4"><a href="#page4">Finanzielle Aspekte</a></li>
+			<li data-menuanchor="page4"><a href="#page4">Umsatz</a></li>
+		</ul>
+	</div>
+	<div id="fullpage">
+		<div class="section">
+			<h1>Einsatz von <span id="big">künstlicher Intelligenz</span> in der deutschen Wirtschaft</h1>
+		</div>
+		<div class="section">Einsatz von KI</div>
+		<div class="section">Anwendungsgebiete
+		</div>
+		<div class="section">Zeitliche Entwicklung</div>
+		<div class="section">Finanzielle Aspekte</div>
+		<div class="section">Umsatz</div>
+		<div class="section">Impressum</div>
+	</div>
 
-	<h2>Lets get this bread!</h2>
-	<p>Marius</p>
-	<p>Der einzig wahre Jonny war hier</p>
+	<script>
+		new fullpage('#fullpage', {
+			//options here
+			autoScrolling: true,
+			scrollHorizontally: true,
+			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+			sectionsColor: ['#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45'],
+		});
+
+		//methods
+		fullpage_api.setAllowScrolling(true);
+	</script>
 </body>
 
 </html>
