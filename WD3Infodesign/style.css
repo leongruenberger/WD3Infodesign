@@ -1,15 +1,15 @@
 /* Hier die CSS-Anweisungen */
 /* Allgemein */
 * {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif !important;
   font-size: 16px;
-  font-weight: 400 !important;
+  font-weight: 400;
 }
 
 .section {
   font-size: 3em;
   padding: 0 3em 0 3em;
-  color: #429bcc !important;
+  color: #429bcc;
   padding-top: 3em;
 }
 
@@ -18,18 +18,22 @@
 }
 
 h2 {
-  color: #a3c4d6 !important;
-  font-size: 53px !important;
-  margin-top: 0.7em !important;
+  color: #a3c4d6;
+  font-size: 53px;
+  margin-top: 0;
 }
 
 h3 {
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 h4 {
-  font-size: 22px !important;
-  margin-top: 1.5em !important;
+  font-size: 22px;
+  margin-top: 1.5em;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 /* Header */
@@ -53,18 +57,19 @@ h4 {
 }
 
 #header #nav li .active a {
-  color: #a3c4d6 !important;
+  color: #a3c4d6;
 }
 
 #header #nav li a {
-  color: #429bcc !important;
+  color: #429bcc;
   font-size: 20px;
-  font-weight: 300 !important;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 #header #nav li a:hover {
   text-decoration: none;
-  color: #a3c4d6 !important;
+  color: #a3c4d6;
 }
 
 /* Sections */
@@ -74,24 +79,25 @@ h4 {
 }
 
 #section-1 h1 {
-  padding-top: 200px;
-  font-weight: 400 !important;
-  color: #a3c4d6 !important;
+  font-size: 52px;
+  padding-top: 150px;
+  font-weight: 400;
+  color: #a3c4d6;
 }
 
 #section-1 h1 #big {
-  font-size: 175%;
+  font-size: 90px;
   display: block;
 }
 
 #section-1 div {
   padding-top: 150px;
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 #section-1 div p {
   margin: 0;
-  font-weight: 300 !important;
+  font-weight: 300;
 }
 
 #section-2 div.inner-section {
@@ -103,7 +109,7 @@ h4 {
 }
 
 #section-2 h3 {
-  margin-top: 2em;
+  margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -119,8 +125,32 @@ h4 {
 }
 
 #section-2 div.icons div.icon-element p.icon-heading {
-  color: #a3c4d6 !important;
+  color: #a3c4d6;
   font-size: 20px;
   margin: 0;
+}
+
+#section-3 h2 {
+  margin-bottom: 0;
+}
+
+#section-3 p.sub {
+  margin-bottom: 2em;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+#section-3 div.chart-container {
+  height: 500px;
+  width: 1000px;
+  position: relative;
+}
+
+#section-3 div.chart-container canvas {
+  margin-bottom: 30em;
+}
+
+#section-3 p.chart-info {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
