@@ -97,4 +97,134 @@ var chart2 = new Chart(chartObject1, {
          }
        }
      }
-})
+});
+
+// Chart 3
+var chartObject1 = document.getElementById('chart3').getContext('2d');
+var chart3 = new Chart(chartObject1, {
+     type: 'radar',
+
+     data:{
+       labels: ["Produktion, Dienstleistungserbringung", 
+                "Administration", 
+                "FuE, Innovation",
+                "Informationstechnik",
+                "Vertrieb, Marketing",
+                "Einkauf/Logistik"],
+      datasets: [{
+        label: "IKT-Branche",
+        backgroundColor: 'rgba(163, 196, 214, 0.4)',
+        borderColor: 'rgba(163, 196, 214, 1)',
+        data: [57,14,36,26,8,3]
+      }, {
+        label: "Gesamtwirtschaft",
+        backgroundColor: 'rgba(3, 196, 214, 0.4)',
+        borderColor: 'rgba(3, 196, 214, 1)',
+        data: [52,37,21,20,5,3]
+      }
+
+      ]
+     },
+
+     options: {
+       scales : {
+         angleLines:{
+           display: false
+         },
+         ticks:{
+           suggestedMin:0,
+           suggestedMax: 100
+         }
+       }
+     }
+});
+
+// Chart 4
+var chartObject1 = document.getElementById('chart4').getContext('2d');
+var chart4 = new Chart(chartObject1, {
+     type: 'radar',
+
+     data:{
+       labels: ["Maschinelles Lernen", 
+                "Bild- oder Tonerkennung", 
+                "Wissensbasierte Systeme",
+                "Sprach- oder Textverstehen"],
+      datasets: [{
+        label: "IKT-Branche",
+        backgroundColor: 'rgba(163, 196, 214, 0.4)',
+        borderColor: 'rgba(163, 196, 214, 1)',
+        data: [59,47,55,23]
+      }, {
+        label: "Gesamtwirtschaft",
+        backgroundColor: 'rgba(3, 196, 214, 0.4)',
+        borderColor: 'rgba(3, 196, 214, 1)',
+        data: [60,56,34,22]
+      }
+
+      ]
+     },
+
+     options: {
+       scales : {
+         angleLines:{
+           display: false
+         },
+         ticks:{
+           suggestedMin:0,
+           suggestedMax: 100
+         }
+       }
+     }
+});
+
+// Chart 5
+var chartObject1 = document.getElementById('chart5').getContext('2d');
+var chart5 = new Chart(chartObject1, {
+  // The type of chart we want to create
+  type: 'horizontalBar',
+
+  // The data for our dataset
+  data: {
+    labels: [
+      'IKT',
+      'Untern.nahe Dienstl.',
+      'Finanzdienstleist.',
+      'Elektrot./Maschin.b.',
+      'Fahrzeugbau',
+      'Chemie/Ph., Gr.st.',
+      'Sonst. Verarb. Gew.',
+      'Ver-/Entsorg., Bg.b.',
+      'Sonst. Dienstleist.',
+      'Verkehr, Logistik',
+      'Großhandel',
+    ],
+    datasets: [
+      {
+        backgroundColor: '#a3c4d6',
+        hoverBackgroundColor: '#429bcc',
+        barThickness: 5,
+        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8],
+      },
+    ],
+  },
+
+  // Configuration options go here
+  options: {
+    scales: {
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+    },
+  },
+});
