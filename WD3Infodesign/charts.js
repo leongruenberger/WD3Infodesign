@@ -59,3 +59,42 @@ var chart1 = new Chart(chartObject1, {
     },
   },
 });
+
+// Chart 2
+var chartObject1 = document.getElementById('chart2').getContext('2d');
+var chart2 = new Chart(chartObject1, {
+     type: 'radar',
+
+     data:{
+       labels: ["Produkte, Dienstleistungen", 
+                "Automatisierung von Prozessen", 
+                "KI-Anwendung für Datenanalyse",
+                "Kundenkommunikation/-interaktion",
+                "andere Anwendungsgebiete"],
+      datasets: [{
+        label: "IKT-Branche",
+        backgroundColor: 'rgba(163, 196, 214, 0.4)',
+        borderColor: 'rgba(163, 196, 214, 1)',
+        data: [66,54,35,9,11]
+      }, {
+        label: "Gesamtwirtschaft",
+        backgroundColor: 'rgba(3, 196, 214, 0.4)',
+        borderColor: 'rgba(3, 196, 214, 1)',
+        data: [60,56,34,22,11]
+      }
+
+      ]
+     },
+
+     options: {
+       scales : {
+         angleLines:{
+           display: false
+         },
+         ticks:{
+           suggestedMin:0,
+           suggestedMax: 100
+         }
+       }
+     }
+})
