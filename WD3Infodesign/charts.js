@@ -60,7 +60,7 @@ var chart1 = new Chart(chartObject1, {
   },
 });
 
-// Chart 2
+// Chart 2 Radar Anwendung 1
 var chartObject1 = document.getElementById('chart2').getContext('2d');
 var chart2 = new Chart(chartObject1, {
      type: 'radar',
@@ -99,7 +99,7 @@ var chart2 = new Chart(chartObject1, {
      }
 });
 
-// Chart 3
+// Chart 3 Radar Anwendung 2
 var chartObject1 = document.getElementById('chart3').getContext('2d');
 var chart3 = new Chart(chartObject1, {
      type: 'radar',
@@ -139,7 +139,7 @@ var chart3 = new Chart(chartObject1, {
      }
 });
 
-// Chart 4
+// Chart 4 Radar Anwendung 3
 var chartObject1 = document.getElementById('chart4').getContext('2d');
 var chart4 = new Chart(chartObject1, {
      type: 'radar',
@@ -177,7 +177,7 @@ var chart4 = new Chart(chartObject1, {
      }
 });
 
-// Chart 5
+// Chart 5 Einsatz von KI in Produkten
 var chartObject1 = document.getElementById('chart5').getContext('2d');
 var chart5 = new Chart(chartObject1, {
   // The type of chart we want to create
@@ -227,4 +227,112 @@ var chart5 = new Chart(chartObject1, {
       ],
     },
   },
+});
+
+// Chart 6 Zeitliche Entwicklung
+var chartObject1 = document.getElementById('chart6').getContext('2d');
+var chart6 = new Chart(chartObject1, {
+  // The type of chart we want to create
+  type: 'horizontalBar',
+
+  // The data for our dataset
+  data: {
+    labels: [
+      'IKT',
+      'Untern.nahe Dienstl.',
+      'Finanzdienstleist.',
+      'Elektrot./Maschin.b.',
+      'Fahrzeugbau',
+      'Chemie/Ph., Gr.st.',
+      'Sonst. Verarb. Gew.',
+      'Ver-/Entsorg., Bg.b.',
+      'Sonst. Dienstleist.',
+      'Verkehr, Logistik',
+      'Großhandel',
+    ],
+    datasets: [
+      {
+        backgroundColor: '#a3c4d6',
+        hoverBackgroundColor: '#429bcc',
+        barThickness: 5,
+        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8],
+      },
+    ],
+  },
+
+  // Configuration options go here
+  options: {
+    scales: {
+      yAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+    },
+  },
+});
+
+//Chart 7 Ausgaben/Gewinne Doppelseitige Balken
+var chartObject1 = document.getElementById('chart7').getContext('2d');
+var chart7 = new Chart(chartObject1, {
+  // The type of chart we want to create
+  type: 'horizontalBar',
+
+  // The data for our dataset
+  data: {
+    labels: [
+      'Finanzdienstleistungen',
+      'IKT',
+      'Sonst. Verarb. Gewerbe',
+      'Elektrot./Maschin.b.',
+      'Unternehmensnahe Dienstleistungen',
+      'Ver- und Entsorgung, Bergbau',
+      'Großhandel',
+      'Chemie/Pharma',
+      'Fahrzeugbau',
+      'Verkehr, Logistik',
+      'Sonstige Dienstleistungen',
+    ],
+    datasets: [
+      { 
+        label: 'Umsätze',
+        backgroundColor: '#a3c4d6',
+        hoverBackgroundColor: '#429bcc',
+        barThickness: 5,
+        data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
+      }, {
+        label: 'Ausgaben',
+        backgroundColor: '#a3c4d6',
+        hoverBackgroundColor: '#429bcc',
+        barThickness: 5,
+        data: [-0.24, -1.5, -0.26, -0.68, -0.65, -0.07, -0.07, -0.14, -0.84, -0.16, -0.19],
+      },
+    ],
+  },
+
+  // Configuration options go here
+    options: {
+      scales:{
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            suggestedMin: -20,
+            suggestedMax: 20
+          }
+        }],
+      },
+    },
 });
