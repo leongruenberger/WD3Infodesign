@@ -1,7 +1,7 @@
 // Global
 Chart.defaults.global.legend.display = false;
 Chart.defaults.global.defaultFontColor = '#429bcc';
-Chart.defaults.global.defaultFontFamily = 'Oswald';
+Chart.defaults.global.defaultFontFamily = 'Open Sans';
 Chart.defaults.global.tooltips.backgroundColor = '#d3d3d3';
 Chart.defaults.global.tooltips.titleFontColor = '#429bcc';
 Chart.defaults.global.tooltips.bodyFontColor = '#429bcc';
@@ -258,7 +258,6 @@ var chart6 = new Chart(chartObject6, {
       'Untern.nahe Dienstl.',
       'Sonst. Dienstleist.',
       'Fahrzeugbau',
-
     ],
     datasets: [
       {
@@ -285,9 +284,10 @@ var chart6 = new Chart(chartObject6, {
           gridLines: {
             display: false,
           },
-         ticks: {
-          suggestedMin: 0,
-          suggestedMax: 100},
+          ticks: {
+            suggestedMin: 0,
+            suggestedMax: 100,
+          },
         },
       ],
     },
@@ -295,24 +295,36 @@ var chart6 = new Chart(chartObject6, {
 });
 
 function updatevor2010() {
-  chart6.data.datasets[0].data =[6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17];
+  chart6.data.datasets[0].data = [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17];
   chart6.update();
-};
+}
 
 function update201015() {
-  chart6.data.datasets[0].data =[25, 25, 32, 35, 38, 39, 43, 44, 44, 54, 56];
+  chart6.data.datasets[0].data = [25, 25, 32, 35, 38, 39, 43, 44, 44, 54, 56];
   chart6.update();
-};
+}
 
 function update201617() {
-  chart6.data.datasets[0].data =[63, 76, 73, 74, 79, 55, 74, 79, 73, 68, 82];
+  chart6.data.datasets[0].data = [63, 76, 73, 74, 79, 55, 74, 79, 73, 68, 82];
   chart6.update();
-};
+}
 
 function update201819() {
-  chart6.data.datasets[0].data =[100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100];
+  chart6.data.datasets[0].data = [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+  ];
   chart6.update();
-};
+}
 
 //Chart 7 Ausgaben/Gewinne Doppelseitige Balken
 var chartObject1 = document.getElementById('chart7').getContext('2d');

@@ -8,6 +8,8 @@
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+
 
 	<!-- Bootstrap 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -150,19 +152,36 @@
 		<!-- Zeitliche Entwicklung-->
 		<div class="section" id="section-6">
 			<h2>Zeitliche Entwicklung</h2>
+			<p class="sub">Jahr des erstmaligen Einsatzes von KI in Unternehmen der deutschen Wirtschaft</p>
 			<button onclick="updatevor2010()">vor 2010</button>
-			<button onclick="update201015()">Zwischen 2010 und 2015</button>
+			<button onclick="update201015()">zwischen 2010 und 2015</button>
 			<button onclick="update201617()">2016/2017</button>
 			<button onclick="update201819()">2018/2019*</button>
-			<p class="sub">XYZ</p>
 			<div class="chart-container">
 				<canvas id="chart6"></canvas>
-
 			</div>
+			<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
+
 
 			<div class="section_image-wrapper">
 				<img src="Images\zeitlicher-verlauf.png" class="section-image" />
 			</div>
+			<style>
+				#section-6 p.sub {
+					margin-bottom: 0;
+				}
+
+				button {
+					cursor: pointer;
+					background-color: #a3c4d6;
+					border: none;
+					padding: 0.5em 1em;
+					color: #002C45;
+					font-size: 14px;
+					font-family: 'Open Sans';
+					margin-bottom: 1em;
+				}
+			</style>
 		</div>
 
 		<!-- Umsatz -->
