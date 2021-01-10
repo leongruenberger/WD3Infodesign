@@ -13,6 +13,7 @@
   color: #429bcc;
   padding-top: 3em;
 }
+
 .content {
   margin: 50px;
 }
@@ -37,42 +38,101 @@ h4 {
 }
 
 /* Header */
-#header {
+
+.header {
   position: fixed;
   z-index: 1000;
   width: 100vw;
   font-size: 1.3em;
-  padding: 3em 7em;
+  padding: 3em 7em;  
+}
 
-  #nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  transition: .3s;
 
-    li {
-      display: inline-block;
-      margin-right: 2em;
+  li {
+    display: inline-block;
+    margin-right: 2em;
 
-      .active {
-        a {
-          color: #a3c4d6;
-        }
-      }
+    a {
+      color: #429bcc;
+      font-size: 20px;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
 
-      a {
-        color: #429bcc;
-        font-size: 20px;
-        font-weight: 300;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: #a3c4d6;
-      }
+    a:hover {
+      text-decoration: none;
+      color: #a3c4d6;
+      transition: .3s;
     }
   }
 }
+
+.nav-pipe {
+  display: inline-block; 
+  position: relative; 
+  width: 2px; 
+  height: 45px; 
+  background-color: #225E80; 
+  margin-right: 30px; 
+  transform: translateY(-5px);
+}
+
+.nav-dots {
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+.nav-dot {
+  display: inline-block;
+  width: 6px; 
+  height: 6px; 
+  border-radius: 50%; 
+  background-color: #45697D; 
+  margin: 4px 3px 0;
+
+  .active {
+    color: #f3f8fa !important;
+    text-shadow: 0px 0px 20px #C4DCE977;
+  }
+
+}
+
+.nav .active .nav-dot {
+  box-shadow: 0px 0px 5px #C4DCE9dd;
+  background-color: #f3f8fa;
+  transition: .2s;
+}
+
+.nav .active .nav-highlight {
+  opacity: 1;
+}
+
+.nav-highlight {
+  position: absolute; 
+  display: inline; 
+  background-color: #ffffff44; 
+  border-radius: 9px; 
+  filter: blur(15px);
+  z-index: 1100;
+  opacity: 0;
+}
+
+
+
+
+
 
 /* Sections */
 
@@ -107,7 +167,7 @@ h4 {
 }
 
 /* Spezifisch */
-#section-1 {
+.section-1 {
   background-image: url('Images/Background.png');
   background-size: cover;
 
@@ -134,7 +194,7 @@ h4 {
   }
 }
 
-#section-2 {
+.section-2 {
   div.inner-section {
     width: 70%;
   }
@@ -167,7 +227,7 @@ h4 {
   }
 }
 
-#section-4 {
+.section-4 {
   .slide {
     .chart-container {
       margin: 0 auto;
@@ -189,3 +249,18 @@ h4 {
     border-color: transparent transparent transparent #a3c4d6;
   }
 }
+
+.section_image-wrapper {
+  position: absolute;
+  top: 10%;
+  right: -150px;
+}
+
+.section-image {
+  display: inline;
+  width: 500px;
+  height: auto;
+  opacity: .2;
+}
+
+

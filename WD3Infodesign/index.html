@@ -11,12 +11,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 
 
-	<!-- Bootstrap 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 		crossorigin="anonymous"></script> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="style.css">
 
@@ -27,22 +32,125 @@
 
 <body>
 	<!-- Header -->
-	<div id="header">
-		<ul id="nav">
-			<li data-menuanchor="page1" class="text-uppercase"><a href="#page1">Start</a></li>
-			<li data-menuanchor="page2" class="text-uppercase"><a href="#page3">Einsatz von KI</a></li>
-			<li data-menuanchor="page3" class="text-uppercase"><a href="#page4">Anwendungsgebiete</a></li>
-			<li data-menuanchor="page4" class="text-uppercase"><a href="#page6">Zeitliche Entwicklung</a></li>
-			<li data-menuanchor="page4" class="text-uppercase"><a href="#page7">Umsatz</a></li>
-			<li data-menuanchor="page4" class="text-uppercase"><a href="#page8">Finanzielle Aspekte</a></li>
-		</ul>
-	</div>
+	<div id="header" class="header">
+		<nav id="nav">
 
+			<ul id="navbar" class="nav">
+
+				<!-- Nav: Start -->
+				<div class="navbar-item">
+					<li data-menuanchor="page1" class="active">
+						<a href="#page1">Start</a>
+					</li>
+					<div class="nav-dots" style="transform: translate(-15px, -10px)">
+						<li data-menuanchor="page1">
+							<a href="#page1">
+								<div class="nav-dot"></div>
+								<div class="nav-highlight" style="width: 50px; height: 20px; transform: translate(-25px, -15px);"></div>
+							</a>
+						</li>
+						<li data-menuanchor="page2">
+							<a href="#page2">
+								<div class="nav-dot"></div>
+								<div class="nav-highlight" style="width: 50px; height: 20px; transform: translate(-35px, -15px);"></div>
+							</a>
+						</li>
+					</div>
+				</div>
+
+				<div class="nav-pipe"></div>
+
+				<!-- Nav: Einsatz von KI -->
+				<div class="navbar-item">
+					<li data-menuanchor="page3" class="active">
+						<a href="#page3">Einsatz von KI</a>
+					</li>
+					<div class="nav-dots" style="transform: translate(-15px, -10px)">
+						<li data-menuanchor="page3">
+							<a href="#page3">
+								<div class="nav-dot"></div>
+								<div class="nav-highlight" style="width: 120px; height: 20px; transform: translate(-65px, -15px);"></div>
+							</a>
+						</li>
+					</div>
+				</div>			
+
+				<!-- Nav: Anwendungsgebiete -->
+				<div class="navbar-item">
+					<li data-menuanchor="page4" class="active">
+						<a href="#page4">Anwendungsgebiete</a>
+					</li>
+					<div class="nav-dots" style="transform: translate(-15px, -10px)">
+						<li data-menuanchor="page4">
+							<a href="#page4">
+								<div class="nav-dot"></div>
+								<div class="nav-highlight" style="width: 165px; height: 20px; transform: translate(-80px, -15px);"></div>
+							</a>
+						</li>
+						<li data-menuanchor="page5">
+							<a href="#page5">
+								<div class="nav-dot"></div>
+								<div class="nav-highlight" style="width: 165px; height: 20px; transform: translate(-90px, -15px);"></div>
+							</a>
+						</li>
+					</div>
+				</div>
+
+				<!-- Nav: Zeitliche Entwicklung -->
+				<div class="navbar-item">
+					<li data-menuanchor="page6" class="active">
+						<a href="#page6">Zeitliche Entwicklung</a>
+					</li>
+					<div class="nav-dots" style="transform: translate(-15px, -10px)">
+						<li data-menuanchor="page6">
+							<a href="#page6">
+								<div class="nav-dot"></div>
+								<div class="nav-highlight" style="width: 190px; height: 20px; transform: translate(-100px, -15px);"></div>
+							</a>
+						</li>
+					</div>
+				</div>	
+
+				<!-- Nav: Umsatz -->
+				<div class="navbar-item">
+					<li data-menuanchor="page6" class="active">
+						<a href="#page7">Umsatz</a>
+					</li>
+					<div class="nav-dots" style="transform: translate(-15px, -10px)">
+						<li data-menuanchor="page7">
+							<a href="#page7">
+								<div class="nav-dot"></div>
+								<div class="nav-highlight" style="width: 65px; height: 20px; transform: translate(-40px, -15px);"></div>
+							</a>
+						</li>
+					</div>
+				</div>	
+
+				<!-- Nav: Finanzielle Aspekte -->
+				<div class="navbar-item">
+					<li data-menuanchor="page6" class="active">
+						<a href="#page8">Finanzielle Aspekte</a>
+					</li>
+					<div class="nav-dots" style="transform: translate(-15px, -10px)">
+						<li data-menuanchor="page8">
+							<a href="#page8">
+								<div class="nav-dot"></div>
+								<div class="nav-highlight" style="width: 175px; height: 20px; transform: translate(-90px, -15px);"></div>
+							</a>
+						</li>
+					</div>
+				</div>	
+
+			</ul>
+		</nav>
+	</div>	
+
+
+	
 	<!-- Pages -->
-	<div id="fullpage">
-
+	<div id="fullpage" data-spy="scroll" data-target="#nav" data-offset="0">
 		<!-- Start (1) -->
-		<div class="section" id="section-1">
+		<div class="section section-1" id="page1 section-1">
 			<h1>Einsatz von <span id="big">künstlicher Intelligenz</span> in der deutschen Wirtschaft</h1>
 			<div>
 				<p class="text-uppercase">Stand der KI-Nutzung im Jahr 2019</p>
@@ -53,7 +161,7 @@
 		</div>
 
 		<!-- Start (2) -->
-		<div class="section" id="section-2">
+		<div class="section section-2" id="page2 section-2">
 			<div class="inner-section">
 				<h2>Die Studie</h2>
 				<p class="intro-text">Im November 2018 verabschiedete die Bundesregierung eine Strategie zur Künstlichen
@@ -93,7 +201,7 @@
 		</div>
 
 		<!-- Einsatz von KI -->
-		<div class="section" id="section-3">
+		<div class="section section-3" id="page3 section-3">
 			<h2>Indikatoren zur Verbreitung des Einsatzes von KI</h2>
 			<p class="sub">in der deutschen Wirtschaft 2019 im Branchenvergleich</p>
 			<div class="chart-container">
@@ -107,7 +215,7 @@
 		</div>
 
 		<!-- Anwendungsgebiete (1)-->
-		<div class="section" id="section-4">
+		<div class="section section-4" id="page4 section-4">
 			<h2>Bedeutung des Einsatzes von KI für die Geschäftstätigkeit</h2>
 			<p class="sub">Unternehmen der deutschen Wirtschaft 2019</p>
 			<div class="slide">
@@ -135,7 +243,7 @@
 		</div>
 
 		<!-- Anwendungsgebiete (2) -->
-		<div class="section" id="section-5">
+		<div class="section section-5" id="page5 section-5">
 			<h2>Einsatz von KI in Produkten oder Dienstleistungen</h2>
 			<p class="sub">Unternehmen der deutschen Wirtschaft 2019</p>
 			<div class="chart-container">
@@ -150,7 +258,7 @@
 		</div>
 
 		<!-- Zeitliche Entwicklung-->
-		<div class="section" id="section-6">
+		<div class="section section-6" id="page6 section-6">
 			<h2>Zeitliche Entwicklung</h2>
 			<p class="sub">Jahr des erstmaligen Einsatzes von KI in Unternehmen der deutschen Wirtschaft</p>
 			<button onclick="updatevor2010()">vor 2010</button>
@@ -185,7 +293,7 @@
 		</div>
 
 		<!-- Umsatz -->
-		<div class="section" id="section-7">
+		<div class="section section-7" id="page7 section-7">
 			<h2>Umsatz</h2>
 			<p class="sub">XYZ</p>
 			<div class="chart-container">
@@ -202,7 +310,7 @@
 		</div>
 
 		<!-- Finanzielle Aspekte -->
-		<div class="section" id="section-8">
+		<div class="section section-8" id="page8 section-8">
 			<h2>Finanzielle Aspekte</h2>
 			<p class="sub">XYZ</p>
 
@@ -212,7 +320,7 @@
 		</div>
 
 		<!-- Impressum -->
-		<div class="section" id="section-9">
+		<div class="section section-9" id="page9 section-9">
 			<h2>Impressum</h2>
 			<p class="sub">XYZ</p>
 		</div>
@@ -233,11 +341,17 @@
 			verticalCentered: false,
 			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
 			sectionsColor: ['#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45'],
+			menu: '#navbar'
 		});
 
 		//methods
 		fullpage_api.setAllowScrolling(true);
 	</script>
+
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
