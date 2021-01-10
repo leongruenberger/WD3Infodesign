@@ -182,3 +182,17 @@ h4 {
   border-color: transparent transparent transparent #a3c4d6;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.section_image-wrapper {
+  position: absolute;
+  top: 10%;
+  right: -150px;
+}
+
+.section-image {
+  display: inline;
+  width: 500px;
+  height: auto;
+  opacity: .2;
+}
