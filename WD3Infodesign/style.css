@@ -73,6 +73,32 @@ h4 {
 }
 
 /* Sections */
+/* Allgemein */
+.section h2 {
+  margin-bottom: 0;
+}
+
+.section p.sub {
+  margin-bottom: 2em;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.section div.chart-container {
+  height: 500px;
+  width: 1000px;
+  position: relative;
+}
+
+.section div.chart-container canvas {
+  margin-bottom: 30em;
+}
+
+.section p.chart-info {
+  font-size: 16px;
+}
+
+/* Spezifisch */
 #section-1 {
   background-image: url("Images/Background.png");
   background-size: cover;
@@ -130,27 +156,11 @@ h4 {
   margin: 0;
 }
 
-#section-3 h2 {
-  margin-bottom: 0;
+#section-4 .slide .chart-container {
+  margin: 0 auto;
 }
 
-#section-3 p.sub {
-  margin-bottom: 2em;
-  margin-top: 0;
-  font-size: 20px;
-}
-
-#section-3 div.chart-container {
-  height: 500px;
-  width: 1000px;
-  position: relative;
-}
-
-#section-3 div.chart-container canvas {
-  margin-bottom: 30em;
-}
-
-#section-3 p.chart-info {
-  font-size: 16px;
+#section-4 .slide .chart-info {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

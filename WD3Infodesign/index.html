@@ -4,7 +4,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>Einsatz von KI in Deutschland</title>
-	<link rel="stylesheet" href="style.css">
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,6 +16,8 @@
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 		crossorigin="anonymous"></script> -->
 
+	<link rel="stylesheet" href="style.css">
+
 	<!-- Fullpage.js -->
 	<link rel="stylesheet" href="Fullpage.js/fullpage.css">
 	<script src="Fullpage.js/fullpage.js"></script>
@@ -26,14 +27,16 @@
 	<!-- Header -->
 	<div id="header">
 		<ul id="nav">
-			<li data-menuanchor="page1" class="active text-uppercase"><a href="#page1">Start</a></li>
+			<li data-menuanchor="page1" class="text-uppercase"><a href="#page1">Start</a></li>
 			<li data-menuanchor="page2" class="text-uppercase"><a href="#page3">Einsatz von KI</a></li>
 			<li data-menuanchor="page3" class="text-uppercase"><a href="#page4">Anwendungsgebiete</a></li>
-			<li data-menuanchor="page4" class="text-uppercase"><a href="#page5">Zeitliche Entwicklung</a></li>
-			<li data-menuanchor="page4" class="text-uppercase"><a href="#page6">Finanzielle Aspekte</a></li>
-			<li data-menuanchor="page4" class="text-uppercase"><a href="#page7">Impressum</a></li>
+			<li data-menuanchor="page4" class="text-uppercase"><a href="#page6">Zeitliche Entwicklung</a></li>
+			<li data-menuanchor="page4" class="text-uppercase"><a href="#page7">Umsatz</a></li>
+			<li data-menuanchor="page4" class="text-uppercase"><a href="#page8">Finanzielle Aspekte</a></li>
 		</ul>
 	</div>
+
+	<!-- Pages -->
 	<div id="fullpage">
 
 		<!-- Start (1) -->
@@ -87,7 +90,7 @@
 				Innovationserhebung hochgerechnet.</p>
 		</div>
 
-		<!-- Einsatz von KI (Page 3)-->
+		<!-- Einsatz von KI -->
 		<div class="section" id="section-3">
 			<h2>Indikatoren zur Verbreitung des Einsatzes von KI</h2>
 			<p class="sub">in der deutschen Wirtschaft 2019 im Branchenvergleich</p>
@@ -102,35 +105,28 @@
 		<div class="section" id="section-4">
 			<h2>Bedeutung des Einsatzes von KI für die Geschäftstätigkeit</h2>
 			<p class="sub">Unternehmen der deutschen Wirtschaft 2019</p>
-			<div class="chart-container">
-				<canvas id="chart2"></canvas>
-
+			<div class="slide">
+				<div class="chart-container">
+					<canvas id="chart2"></canvas>
+				</div>
+				<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
 			</div>
-			<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
+			<div class="slide">
+				<div class="chart-container">
+					<canvas id="chart3"></canvas>
+				</div>
+				<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
+			</div>
+			<div class="slide">
+				<div class="chart-container">
+					<canvas id="chart4"></canvas>
+				</div>
+				<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
+			</div>
 		</div>
 
-		<div class="section" id="section-5">
-			<h2>Bedeutung des Einsatzes von KI für die Geschäftstätigkeit</h2>
-			<p class="sub">Unternehmen der deutschen Wirtschaft 2019</p>
-			<div class="chart-container">
-				<canvas id="chart3"></canvas>
-
-			</div>
-			<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
-		</div>
-
-		<div class="section" id="section-6">
-			<h2>Bedeutung des Einsatzes von KI für die Geschäftstätigkeit</h2>
-			<p class="sub">Unternehmen der deutschen Wirtschaft 2019</p>
-			<div class="chart-container">
-				<canvas id="chart4"></canvas>
-
-			</div>
-			<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
-		</div>
-		
 		<!-- Anwendungsgebiete (2) -->
-		<div class="section" id="section-7">
+		<div class="section" id="section-5">
 			<h2>Einsatz von KI in Produkten oder Dienstleistungen</h2>
 			<p class="sub">Unternehmen der deutschen Wirtschaft 2019</p>
 			<div class="chart-container">
@@ -138,36 +134,38 @@
 
 			</div>
 			<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
-		</div>	
+		</div>
 
-		
 		<!-- Zeitliche Entwicklung-->
-		<div class="section" id="section-8">
-			<h2>Zeitliche Entwicklung</h2>	
+		<div class="section" id="section-6">
+			<h2>Zeitliche Entwicklung</h2>
+			<p class="sub">XYZ</p>
 			<div class="chart-container">
 				<canvas id="chart6"></canvas>
 
 			</div>
 		</div>
 
-		<!-- Finanzielle Aspekte -->
-		<div class="section" id="section-9">
+		<!-- Umsatz -->
+		<div class="section" id="section-7">
 			<h2>Umsatz</h2>
+			<p class="sub">XYZ</p>
 			<div class="chart-container">
 				<canvas id="chart7"></canvas>
-
 			</div>
 			<p class="chart-info">in % aller KI einsetzenden Unternehmen</p>
-		
 		</div>
 
-		<!-- Umsatz -->
-		<div class="section" id="section-10">
+		<!-- Finanzielle Aspekte -->
+		<div class="section" id="section-8">
 			<h2>Finanzielle Aspekte</h2>
+			<p class="sub">XYZ</p>
 		</div>
+
 		<!-- Impressum -->
-		<div class="section" id="section-11">
+		<div class="section" id="section-9">
 			<h2>Impressum</h2>
+			<p class="sub">XYZ</p>
 		</div>
 	</div>
 
@@ -184,7 +182,7 @@
 			autoScrolling: true,
 			scrollHorizontally: true,
 			verticalCentered: false,
-			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6','page7', 'page8', 'page9'],
+			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
 			sectionsColor: ['#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45', '#002C45'],
 		});
 
