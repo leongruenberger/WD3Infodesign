@@ -239,32 +239,33 @@ var chart5 = new Chart(chartObject1, {
 });
 
 // Chart 6 Zeitliche Entwicklung
-var chartObject1 = document.getElementById('chart6').getContext('2d');
-var chart6 = new Chart(chartObject1, {
+var chartObject6 = document.getElementById('chart6').getContext('2d');
+var chart6 = new Chart(chartObject6, {
   // The type of chart we want to create
   type: 'horizontalBar',
 
   // The data for our dataset
   data: {
     labels: [
-      'IKT',
-      'Untern.nahe Dienstl.',
-      'Finanzdienstleist.',
-      'Elektrot./Maschin.b.',
-      'Fahrzeugbau',
+      'Finanzdienstleistungen.',
       'Chemie/Ph., Gr.st.',
-      'Sonst. Verarb. Gew.',
-      'Ver-/Entsorg., Bg.b.',
-      'Sonst. Dienstleist.',
-      'Verkehr, Logistik',
+      'Elektrot./Maschin.b.',
+      'IKT',
       'Großhandel',
+      'Verkehr, Logistik',
+      'Ver-/Entsorg., Bg.b.',
+      'Sonst. Verarb. Gew.',
+      'Untern.nahe Dienstl.',
+      'Sonst. Dienstleist.',
+      'Fahrzeugbau',
+
     ],
     datasets: [
       {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8],
+        data: [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17],
       },
     ],
   },
@@ -284,11 +285,34 @@ var chart6 = new Chart(chartObject1, {
           gridLines: {
             display: false,
           },
+         ticks: {
+          suggestedMin: 0,
+          suggestedMax: 100},
         },
       ],
     },
   },
 });
+
+function updatevor2010() {
+  chart6.data.datasets[0].data =[6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17];
+  chart6.update();
+};
+
+function update201015() {
+  chart6.data.datasets[0].data =[25, 25, 32, 35, 38, 39, 43, 44, 44, 54, 56];
+  chart6.update();
+};
+
+function update201617() {
+  chart6.data.datasets[0].data =[63, 76, 73, 74, 79, 55, 74, 79, 73, 68, 82];
+  chart6.update();
+};
+
+function update201819() {
+  chart6.data.datasets[0].data =[100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100];
+  chart6.update();
+};
 
 //Chart 7 Ausgaben/Gewinne Doppelseitige Balken
 var chartObject1 = document.getElementById('chart7').getContext('2d');
