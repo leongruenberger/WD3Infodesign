@@ -326,42 +326,34 @@ function update201819() {
   chart6.update();
 }
 
-//Chart 7 Ausgaben/Gewinne Doppelseitige Balken
-var chartObject1 = document.getElementById('chart7').getContext('2d');
-var chart7 = new Chart(chartObject1, {
+//Chart 7 Ausgaben Doppelseitige Balken
+var chartObject7 = document.getElementById('chart7').getContext('2d');
+var chart7 = new Chart(chartObject7, {
   // The type of chart we want to create
   type: 'horizontalBar',
 
   // The data for our dataset
   data: {
     labels: [
-      'Finanzdienstleistungen',
-      'IKT',
-      'Sonst. Verarb. Gewerbe',
-      'Elektrot./Maschin.b.',
-      'Unternehmensnahe Dienstleistungen',
-      'Ver- und Entsorgung, Bergbau',
-      'Großhandel',
-      'Chemie/Pharma',
-      'Fahrzeugbau',
-      'Verkehr, Logistik',
-      'Sonstige Dienstleistungen',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
+      ' ',
     ],
     datasets: [
-      {
-        label: 'Umsätze',
-        backgroundColor: '#a3c4d6',
-        hoverBackgroundColor: '#429bcc',
-        barThickness: 5,
-        data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
-      },
       {
         label: 'Ausgaben',
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [
-          -0.24,
+        data: [-0.24,
           -1.5,
           -0.26,
           -0.68,
@@ -371,9 +363,9 @@ var chart7 = new Chart(chartObject1, {
           -0.14,
           -0.84,
           -0.16,
-          -0.19,
-        ],
+          -0.19],
       },
+
     ],
   },
 
@@ -391,6 +383,61 @@ var chart7 = new Chart(chartObject1, {
         {
           ticks: {
             suggestedMin: -20,
+            suggestedMax: 0,
+          },
+        },
+      ],
+    },
+  },
+});
+
+//Chart 8 Umsätze Doppelseitige Balken
+var chartObject8 = document.getElementById('chart8').getContext('2d');
+var chart8 = new Chart(chartObject8, {
+  // The type of chart we want to create
+  type: 'horizontalBar',
+
+  // The data for our dataset
+  data: {
+    labels: [
+      'Finanzdienstleistungen ',
+      'IKT ',
+      'Sonst. Verarb. Gewerbe ',
+      'Elektrot./Maschin.b. ',
+      'Unternehmensnahe Dienstleistungen ',
+      'Ver- und Entsorgung, Bergbau ',
+      'Großhandel ',
+      'Chemie/Pharma ',
+      'Fahrzeugbau ',
+      'Verkehr, Logistik ',
+      'Sonstige Dienstleistungen ',
+    ],
+    datasets: [
+      {
+        label: 'Umsätze',
+        backgroundColor: '#a3c4d6',
+        hoverBackgroundColor: '#429bcc',
+        barThickness: 5,
+        data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
+      },
+
+    ],
+  },
+
+  // Configuration options go here
+  options: {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          ticks: {
+            suggestedMin: 0,
             suggestedMax: 20,
           },
         },
