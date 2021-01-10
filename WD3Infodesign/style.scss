@@ -101,6 +101,9 @@ h4 {
   p.chart-info {
     font-size: 16px;
   }
+
+  /* .fp-controlArrow.fp-prev {
+  } */
 }
 
 /* Spezifisch */
@@ -171,7 +174,18 @@ h4 {
     }
 
     .chart-info {
-      margin: 0 auto;
+      text-align: center;
+      margin-top: 2em;
     }
+  }
+
+  .fp-controlArrow.fp-prev {
+    transform: translate(400px, 100px);
+    border-color: transparent #a3c4d6 transparent transparent;
+  }
+
+  .fp-controlArrow.fp-next {
+    transform: translate(-400px, 100px);
+    border-color: transparent transparent transparent #a3c4d6;
   }
 }
