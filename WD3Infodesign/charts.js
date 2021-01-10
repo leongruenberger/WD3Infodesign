@@ -445,3 +445,58 @@ var chart8 = new Chart(chartObject8, {
     },
   },
 });
+
+//Chart 9 Umsätze Doppelseitige Balken
+var chartObject9 = document.getElementById('chart9').getContext('2d');
+var chart9 = new Chart(chartObject9, {
+  // The type of chart we want to create
+  type: 'horizontalBar',
+
+  // The data for our dataset
+  data: {
+    labels: [
+      'Fahrzeugbau',
+      'Elektrot./Maschin.b.',
+      'IKT ',
+      'Verkehr, Logistik ',
+      'Finanzdienstleist.',
+      'Chemie/Pharma, Gr. st.',
+      'Ver- und Entsorg., Bg.b.',
+      'Sonstige Dienstleist.',
+      'Großhandel ',
+      'Sonst. Verarb. Gewerbe ',
+      'Unternehmensn. Dienstleist.',
+    ],
+    datasets: [
+      {
+        label: 'Umsätze',
+        backgroundColor: '#a3c4d6',
+        hoverBackgroundColor: '#429bcc',
+        barThickness: 5,
+        data: [7056, 718, 382, 321, 286, 282, 245, 210, 171, 130, 93],
+      },
+
+    ],
+  },
+
+  // Configuration options go here
+  options: {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+      xAxes: [
+        {
+          ticks: {
+            suggestedMin: 0,
+            suggestedMax: 7100,
+          },
+        },
+      ],
+    },
+  },
+});
