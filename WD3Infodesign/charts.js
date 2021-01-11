@@ -2,6 +2,7 @@
 Chart.defaults.global.legend.display = false;
 Chart.defaults.global.defaultFontColor = '#429bcc';
 Chart.defaults.global.defaultFontFamily = 'Open Sans';
+Chart.defaults.global.defaultFontSize = 14;
 Chart.defaults.global.tooltips.backgroundColor = '#d3d3d3';
 Chart.defaults.global.tooltips.titleFontColor = '#429bcc';
 Chart.defaults.global.tooltips.bodyFontColor = '#429bcc';
@@ -334,26 +335,15 @@ var chart7 = new Chart(chartObject7, {
 
   // The data for our dataset
   data: {
-    labels: [
-      ' ',
-      ' ',
-      ' ',
-      ' ',
-      ' ',
-      ' ',
-      ' ',
-      ' ',
-      ' ',
-      ' ',
-      ' ',
-    ],
+    labels: [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
     datasets: [
       {
         label: 'Ausgaben',
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [-0.24,
+        data: [
+          -0.24,
           -1.5,
           -0.26,
           -0.68,
@@ -363,9 +353,9 @@ var chart7 = new Chart(chartObject7, {
           -0.14,
           -0.84,
           -0.16,
-          -0.19],
+          -0.19,
+        ],
       },
-
     ],
   },
 
@@ -382,7 +372,7 @@ var chart7 = new Chart(chartObject7, {
       xAxes: [
         {
           ticks: {
-            suggestedMin: -20,
+            suggestedMin: -2,
             suggestedMax: 0,
           },
         },
@@ -420,7 +410,6 @@ var chart8 = new Chart(chartObject8, {
         barThickness: 5,
         data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
       },
-
     ],
   },
 
@@ -475,7 +464,6 @@ var chart9 = new Chart(chartObject9, {
         barThickness: 5,
         data: [7056, 718, 382, 321, 286, 282, 245, 210, 171, 130, 93],
       },
-
     ],
   },
 

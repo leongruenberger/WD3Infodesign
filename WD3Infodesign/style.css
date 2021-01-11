@@ -49,8 +49,8 @@ h4 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav li {
@@ -69,8 +69,8 @@ h4 {
 .nav li a:hover {
   text-decoration: none;
   color: #a3c4d6;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav-pipe {
@@ -78,7 +78,7 @@ h4 {
   position: relative;
   width: 2px;
   height: 45px;
-  background-color: #225E80;
+  background-color: #225e80;
   margin-right: 30px;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -103,21 +103,21 @@ h4 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #45697D;
+  background-color: #45697d;
   margin: 4px 3px 0;
 }
 
 .nav-dot .active {
   color: #f3f8fa !important;
-  text-shadow: 0px 0px 20px #C4DCE977;
+  text-shadow: 0px 0px 20px #c4dce977;
 }
 
 .nav .active .nav-dot {
-  -webkit-box-shadow: 0px 0px 5px #C4DCE9dd;
-          box-shadow: 0px 0px 5px #C4DCE9dd;
+  -webkit-box-shadow: 0px 0px 5px #c4dce9dd;
+          box-shadow: 0px 0px 5px #c4dce9dd;
   background-color: #f3f8fa;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .nav .active .nav-highlight {
@@ -137,6 +137,19 @@ h4 {
 
 /* Sections */
 /* Allgemein */
+.section_image-wrapper {
+  position: absolute;
+  top: 10%;
+  right: -150px;
+}
+
+.section-image {
+  display: inline;
+  width: 500px;
+  height: auto;
+  opacity: 0.2;
+}
+
 .section {
   /* .fp-controlArrow.fp-prev {
   } */
@@ -245,16 +258,29 @@ h4 {
   border-color: transparent transparent transparent #a3c4d6;
 }
 
-.section_image-wrapper {
-  position: absolute;
-  top: 10%;
-  right: -150px;
+.section-6 p.sub {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
 }
 
-.section-image {
-  display: inline;
-  width: 500px;
-  height: auto;
-  opacity: .2;
+.section-6 button {
+  cursor: pointer;
+  background-color: #a3c4d6;
+  border: none;
+  padding: 0.5em 1em;
+  color: #002c45;
+  font-size: 14px;
+  font-family: 'Open Sans';
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.section-7 .chart-container {
+  display: inline-block;
+  width: 700px !important;
+}
+
+.section-7 canvas {
+  padding-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
