@@ -1,4 +1,4 @@
-// Change default options for ALL charts
+// Global Chart Datalabels
 Chart.helpers.merge(Chart.defaults.global.plugins.datalabels, {
   anchor: 'end',
   align: 'right',
