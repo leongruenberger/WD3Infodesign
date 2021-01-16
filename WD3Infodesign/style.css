@@ -36,6 +36,14 @@ h4 {
   text-transform: uppercase;
 }
 
+p {
+  font-family: 'Open Sans' !important;
+}
+
+p.sub {
+  font-family: 'Oswald' !important;
+}
+
 /* Header */
 .header {
   position: fixed;
