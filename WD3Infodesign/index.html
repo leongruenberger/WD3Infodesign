@@ -266,10 +266,31 @@
 		<div class="section section-6" id="page6 section-6">
 			<h2>Zeitliche Entwicklung</h2>
 			<p class="sub">Jahr des erstmaligen Einsatzes von KI in Unternehmen der deutschen Wirtschaft</p>
-			<button onclick="updatevor2010()">vor 2010</button>
+			<!-- <button class="zeitachse-btn" onclick="updatevor2010()">vor 2010</button>
 			<button onclick="update201015()">zwischen 2010 und 2015</button>
 			<button onclick="update201617()">2016/2017</button>
-			<button onclick="update201819()">2018/2019*</button>
+			<button onclick="update201819()">2018/2019*</button> -->		
+	
+
+			<div class="zeitachse" style="margin-top: 5px;">				
+				<span class="zeitachse-label">SUMMIERT</span>				
+				<button id="time-1" class="zeitachse-btn" onclick="updatevor2010()">
+					<div class="zeitachse-btn-label active">vor 2010</div>					
+				</button>					
+				<button id="time-2" class="zeitachse-btn" onclick="update201015()">
+					<div class="zeitachse-btn-connector"></div>		
+					<div class="zeitachse-btn-label">2010-2015</div>					
+				</button>					
+				<button id="time-3" class="zeitachse-btn" onclick="update201617()">
+					<div class="zeitachse-btn-connector"></div>		
+					<div class="zeitachse-btn-label">2016-2017</div>					
+				</button>					
+				<button id="time-4" class="zeitachse-btn" onclick="update201819()">
+					<div class="zeitachse-btn-connector"></div>		
+					<div class="zeitachse-btn-label">2018-2019</div>					
+				</button>	
+			</div>
+
 			<div class="chart-container">
 				<canvas id="chart6"></canvas>
 			</div>
@@ -362,7 +383,47 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
 		crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$('#time-1').click(function() {
+				$( "#time-1" ).children().addClass("active");  
+
+				$( "#time-2" ).children().removeClass("active");  
+				$( "#time-3" ).children().removeClass("active");  
+				$( "#time-4" ).children().removeClass("active");  
+			});
+			$('#time-2').click(function() { 
+				$( "#time-1" ).children().addClass("active");   
+				$( "#time-2" ).children().addClass("active");   
+
+				$( "#time-3" ).children().removeClass("active");  
+				$( "#time-4" ).children().removeClass("active");  
+			});
+			$('#time-3').click(function() {
+				$( "#time-1" ).children().addClass("active");  
+				$( "#time-2" ).children().addClass("active");  
+				$( "#time-3" ).children().addClass("active");     
+				
+				$( "#time-4" ).children().removeClass("active");  
+			});
+			$('#time-4').click(function() {
+				$( "#time-1" ).children().addClass("active");  
+				$( "#time-2" ).children().addClass("active");  
+				$( "#time-3" ).children().addClass("active");  
+				$( "#time-4" ).children().addClass("active");  
+
+			});
+		});
+	</script>
 
 </body>
 
 </html>
+
+
+
+<!-- <button class="zeitachse-btn" onclick="update201617()">
+	<div class="zeitachse-btn-connector"></div>		
+	<div class="zeitachse-btn-label">vor 2010</div>					
+</button>					 
+-->
