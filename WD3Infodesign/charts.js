@@ -18,15 +18,15 @@ var chart1 = new Chart(chartObject1, {
   // The data for our dataset
   data: {
     labels: [
-      'IKT',
-      'Finanzdienstleist.',
-      'Untern.nahe Dienstl.',
-      'Elektrot./Maschin.b.',
+      'Informations- und Kommunikationstechnologien',
+      'Finanzdienstleistungen',
+      'Unternehmensnahe Dienstleistungen',
+      'Elektrotechnik/Maschinenbau.',
       'Fahrzeugbau',
-      'Chemie/Ph., Gr.st.',
-      'Ver-/Entsorg., Bg.b.',
-      'Sonst. Verarb. Gew.',
-      'Sonst. Dienstleist.',
+      'Chemie-, Pharma- und Grundstoffindustrie',
+      'Ver- und Entsorgung, Bergbau',
+      'Sonstiges Verarbeitendes Gewerbe',
+      'Sonstige Dienstleistungen',
       'Verkehr, Logistik',
       'Großhandel',
     ],
@@ -76,7 +76,7 @@ var chart2 = new Chart(chartObject1, {
     ],
     datasets: [
       {
-        label: 'IKT-Branche',
+        label: 'Informations- und Kommunikationstechnologien',
         backgroundColor: 'rgba(163, 196, 214, 0.4)',
         borderColor: 'rgba(163, 196, 214, 1)',
         data: [66, 54, 35, 9, 11],
@@ -119,7 +119,7 @@ var chart3 = new Chart(chartObject1, {
     ],
     datasets: [
       {
-        label: 'IKT-Branche',
+        label: 'Informations- und Kommunikationstechnologien',
         backgroundColor: 'rgba(163, 196, 214, 0.4)',
         borderColor: 'rgba(163, 196, 214, 1)',
         data: [57, 14, 36, 26, 8, 3],
@@ -160,7 +160,7 @@ var chart4 = new Chart(chartObject1, {
     ],
     datasets: [
       {
-        label: 'IKT-Branche',
+        label: 'Informations- und Kommunikationstechnologien',
         backgroundColor: 'rgba(163, 196, 214, 0.4)',
         borderColor: 'rgba(163, 196, 214, 1)',
         data: [59, 47, 55, 23],
@@ -196,15 +196,15 @@ var chart5 = new Chart(chartObject1, {
   // The data for our dataset
   data: {
     labels: [
-      'IKT',
-      'Untern.nahe Dienstl.',
-      'Finanzdienstleist.',
-      'Elektrot./Maschin.b.',
+      'Informations- und Kommunikationstechnologien',
+      'Unternehmensnahe Dienstleistungen',
+      'Finanzdienstleistungen',
+      'Elektrotechnik/Maschinenbau.',
       'Fahrzeugbau',
-      'Chemie/Ph., Gr.st.',
-      'Sonst. Verarb. Gew.',
-      'Ver-/Entsorg., Bg.b.',
-      'Sonst. Dienstleist.',
+      'Chemie-, Pharma- und Grundstoffindustrie',
+      'Sonstiges Verarbeitendes Gewerbe',
+      'Ver- und Entsorgung, Bergbau',
+      'Sonstige Dienstleistungen',
       'Verkehr, Logistik',
       'Großhandel',
     ],
@@ -249,15 +249,15 @@ var chart6 = new Chart(chartObject6, {
   data: {
     labels: [
       'Finanzdienstleistungen.',
-      'Chemie/Ph., Gr.st.',
-      'Elektrot./Maschin.b.',
-      'IKT',
+      'Chemie-, Pharma- und Grundstoffindustrie',
+      'Elektrotechnik/Maschinenbau.',
+      'Informations- und Kommunikationstechnologien',
       'Großhandel',
       'Verkehr, Logistik',
-      'Ver-/Entsorg., Bg.b.',
-      'Sonst. Verarb. Gew.',
-      'Untern.nahe Dienstl.',
-      'Sonst. Dienstleist.',
+      'Ver- und Entsorgung, Bergbau',
+      'Sonstiges Verarbeitendes Gewerbe',
+      'Unternehmensnahe Dienstleistungen',
+      'Sonstige Dienstleistungen',
       'Fahrzeugbau',
     ],
     datasets: [
@@ -391,9 +391,9 @@ var chart8 = new Chart(chartObject8, {
   data: {
     labels: [
       'Finanzdienstleistungen ',
-      'IKT ',
+      'Informations- und Kommunikationstechnologien',
       'Sonst. Verarb. Gewerbe ',
-      'Elektrot./Maschin.b. ',
+      'Elektrotechnik/Maschinenbau. ',
       'Unternehmensnahe Dienstleistungen ',
       'Ver- und Entsorgung, Bergbau ',
       'Großhandel ',
@@ -445,16 +445,16 @@ var chart9 = new Chart(chartObject9, {
   data: {
     labels: [
       'Fahrzeugbau',
-      'Elektrot./Maschin.b.',
-      'IKT ',
+      'Elektrotechnik und Maschinenbau',
+      'Informations- und Kommunikationstechnologien ',
       'Verkehr, Logistik ',
-      'Finanzdienstleist.',
-      'Chemie/Pharma, Gr. st.',
-      'Ver- und Entsorg., Bg.b.',
-      'Sonstige Dienstleist.',
+      'Finanzdienstleistungen',
+      'Chemie-, Pharma- und Grundstoffindustrie',
+      'Ver- und Entsorgung, Bergbau',
+      'Sonstige Dienstleistungen',
       'Großhandel ',
-      'Sonst. Verarb. Gewerbe ',
-      'Unternehmensn. Dienstleist.',
+      'Sonstiges Verarbeitendes Gewerbe ',
+      'Unternehmensnahe Dienstleistungen',
     ],
     datasets: [
       {
