@@ -3,10 +3,10 @@ Chart.defaults.global.legend.display = false;
 Chart.defaults.global.defaultFontColor = '#429bcc';
 Chart.defaults.global.defaultFontFamily = 'Open Sans';
 Chart.defaults.global.defaultFontSize = 14;
-Chart.defaults.global.tooltips.backgroundColor = '#d3d3d3';
-Chart.defaults.global.tooltips.titleFontColor = '#429bcc';
-Chart.defaults.global.tooltips.bodyFontColor = '#429bcc';
-Chart.defaults.global.tooltips.xPadding = 10;
+Chart.defaults.global.tooltips.backgroundColor = '#a3c4d6';
+Chart.defaults.global.tooltips.titleFontColor = '#002C45';
+Chart.defaults.global.tooltips.bodyFontColor = '#002C45';
+Chart.defaults.global.tooltips.xPadding = 15;
 Chart.defaults.global.tooltips.yPadding = 10;
 
 // Chart 1
@@ -21,7 +21,7 @@ var chart1 = new Chart(chartObject1, {
       'Informations- und Kommunikationstechnologien',
       'Finanzdienstleistungen',
       'Unternehmensnahe Dienstleistungen',
-      'Elektrotechnik/Maschinenbau.',
+      'Elektrotechnik/Maschinenbau',
       'Fahrzeugbau',
       'Chemie-, Pharma- und Grundstoffindustrie',
       'Ver- und Entsorgung, Bergbau',
@@ -217,7 +217,7 @@ var chart5 = new Chart(chartObject1, {
       'Informations- und Kommunikationstechnologien',
       'Unternehmensnahe Dienstleistungen',
       'Finanzdienstleistungen',
-      'Elektrotechnik/Maschinenbau.',
+      'Elektrotechnik/Maschinenbau',
       'Fahrzeugbau',
       'Chemie-, Pharma- und Grundstoffindustrie',
       'Sonstiges Verarbeitendes Gewerbe',
@@ -269,9 +269,9 @@ var chart6 = new Chart(chartObject6, {
   // The data for our dataset
   data: {
     labels: [
-      'Finanzdienstleistungen.',
+      'Finanzdienstleistungen',
       'Chemie-, Pharma- und Grundstoffindustrie',
-      'Elektrotechnik/Maschinenbau.',
+      'Elektrotechnik/Maschinenbau',
       'Informations- und Kommunikationstechnologien',
       'Großhandel',
       'Verkehr, Logistik',
@@ -467,15 +467,15 @@ var chart8 = new Chart(chartObject8, {
     labels: [
       'Finanzdienstleistungen ',
       'Informations- und Kommunikationstechnologien',
-      'Sonstiges Verarbeitendes Gewerbe ',
-      'Elektrotechnik/Maschinenbau. ',
-      'Unternehmensnahe Dienstleistungen ',
+      'Sonstiges Verarbeitendes Gewerbe',
+      'Elektrotechnik/Maschinenbau',
+      'Unternehmensnahe Dienstleistungen',
       'Ver- und Entsorgung, Bergbau ',
-      'Großhandel ',
-      'Chemie/Pharma ',
-      'Fahrzeugbau ',
-      'Verkehr, Logistik ',
-      'Sonstige Dienstleistungen ',
+      'Großhandel',
+      'Chemie/Pharma',
+      'Fahrzeugbau',
+      'Verkehr, Logistik',
+      'Sonstige Dienstleistungen',
     ],
     datasets: [
       {
@@ -528,14 +528,14 @@ var chart9 = new Chart(chartObject9, {
     labels: [
       'Fahrzeugbau',
       'Elektrotechnik und Maschinenbau',
-      'Informations- und Kommunikationstechnologien ',
-      'Verkehr, Logistik ',
+      'Informations- und Kommunikationstechnologien',
+      'Verkehr, Logistik',
       'Finanzdienstleistungen',
       'Chemie-, Pharma- und Grundstoffindustrie',
       'Ver- und Entsorgung, Bergbau',
       'Sonstige Dienstleistungen',
-      'Großhandel ',
-      'Sonstiges Verarbeitendes Gewerbe ',
+      'Großhandel',
+      'Sonstiges Verarbeitendes Gewerbe',
       'Unternehmensnahe Dienstleistungen',
       ' ',
       'Gesamtwirtschaft',
