@@ -1,3 +1,9 @@
+// Change default options for ALL charts
+Chart.helpers.merge(Chart.defaults.global.plugins.datalabels, {
+  anchor: 'end',
+  align: 'right',
+});
+
 // Global
 Chart.defaults.global.legend.display = false;
 Chart.defaults.global.defaultFontColor = '#429bcc';
