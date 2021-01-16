@@ -29,13 +29,15 @@ var chart1 = new Chart(chartObject1, {
       'Sonstige Dienstleistungen',
       'Verkehr, Logistik',
       'Großhandel',
+      ' ',
+      'Gesamtwirtschaft'
     ],
     datasets: [
       {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0],
+        data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 0, 5,8],
       },
     ],
   },
@@ -207,13 +209,15 @@ var chart5 = new Chart(chartObject1, {
       'Sonstige Dienstleistungen',
       'Verkehr, Logistik',
       'Großhandel',
+      ' ',
+      'Gesamtwirtschaft'
     ],
     datasets: [
       {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8],
+        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8, 0, 4,4],
       },
     ],
   },
@@ -259,13 +263,15 @@ var chart6 = new Chart(chartObject6, {
       'Unternehmensnahe Dienstleistungen',
       'Sonstige Dienstleistungen',
       'Fahrzeugbau',
+      ' ',
+      'Gesamtwirtschaft'
     ],
     datasets: [
       {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17],
+        data: [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17, 0, 20],
       },
     ],
   },
@@ -296,17 +302,17 @@ var chart6 = new Chart(chartObject6, {
 });
 
 function updatevor2010() {
-  chart6.data.datasets[0].data = [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17];
+  chart6.data.datasets[0].data = [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17, 0, 20];
   chart6.update();
 }
 
 function update201015() {
-  chart6.data.datasets[0].data = [25, 25, 32, 35, 38, 39, 43, 44, 44, 54, 56];
+  chart6.data.datasets[0].data = [25, 25, 32, 35, 38, 39, 43, 44, 44, 54, 56, 0, 40];
   chart6.update();
 }
 
 function update201617() {
-  chart6.data.datasets[0].data = [63, 76, 73, 74, 79, 55, 74, 79, 73, 68, 82];
+  chart6.data.datasets[0].data = [63, 76, 73, 74, 79, 55, 74, 79, 73, 68, 82, 0, 73];
   chart6.update();
 }
 
@@ -323,6 +329,8 @@ function update201819() {
     100,
     100,
     100,
+    0,
+    100
   ];
   chart6.update();
 }
@@ -392,7 +400,7 @@ var chart8 = new Chart(chartObject8, {
     labels: [
       'Finanzdienstleistungen ',
       'Informations- und Kommunikationstechnologien',
-      'Sonst. Verarb. Gewerbe ',
+      'Sonstiges Verarbeitendes Gewerbe ',
       'Elektrotechnik/Maschinenbau. ',
       'Unternehmensnahe Dienstleistungen ',
       'Ver- und Entsorgung, Bergbau ',
@@ -455,6 +463,8 @@ var chart9 = new Chart(chartObject9, {
       'Großhandel ',
       'Sonstiges Verarbeitendes Gewerbe ',
       'Unternehmensnahe Dienstleistungen',
+      ' ',
+      'Gesamtwirtschaft'
     ],
     datasets: [
       {
@@ -462,7 +472,7 @@ var chart9 = new Chart(chartObject9, {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [7056, 718, 382, 321, 286, 282, 245, 210, 171, 130, 93],
+        data: [7056, 718, 382, 321, 286, 282, 245, 210, 171, 130,93, 0, 274],
       },
     ],
   },
