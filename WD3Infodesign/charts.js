@@ -30,14 +30,29 @@ var chart1 = new Chart(chartObject1, {
       'Verkehr, Logistik',
       'Großhandel',
       ' ',
-      'Gesamtwirtschaft'
+      'Gesamtwirtschaft',
     ],
     datasets: [
       {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [17.8, 12.2, 11.1, 6.8, 5.1, 4.6, 3.6, 3.3, 2.5, 1.5, 1.0, 0, 5,8],
+        data: [
+          17.8,
+          12.2,
+          11.1,
+          6.8,
+          5.1,
+          4.6,
+          3.6,
+          3.3,
+          2.5,
+          1.5,
+          1.0,
+          0,
+          5,
+          8,
+        ],
       },
     ],
   },
@@ -54,6 +69,7 @@ var chart1 = new Chart(chartObject1, {
       ],
       xAxes: [
         {
+          display: false,
           gridLines: {
             display: false,
           },
@@ -210,14 +226,14 @@ var chart5 = new Chart(chartObject1, {
       'Verkehr, Logistik',
       'Großhandel',
       ' ',
-      'Gesamtwirtschaft'
+      'Gesamtwirtschaft',
     ],
     datasets: [
       {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8, 0, 4,4],
+        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8, 0, 4, 4],
       },
     ],
   },
@@ -234,6 +250,7 @@ var chart5 = new Chart(chartObject1, {
       ],
       xAxes: [
         {
+          display: false,
           gridLines: {
             display: false,
           },
@@ -264,7 +281,7 @@ var chart6 = new Chart(chartObject6, {
       'Sonstige Dienstleistungen',
       'Fahrzeugbau',
       ' ',
-      'Gesamtwirtschaft'
+      'Gesamtwirtschaft',
     ],
     datasets: [
       {
@@ -288,6 +305,7 @@ var chart6 = new Chart(chartObject6, {
       ],
       xAxes: [
         {
+          display: false,
           gridLines: {
             display: false,
           },
@@ -302,17 +320,59 @@ var chart6 = new Chart(chartObject6, {
 });
 
 function updatevor2010() {
-  chart6.data.datasets[0].data = [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17, 0, 20];
+  chart6.data.datasets[0].data = [
+    6,
+    11,
+    17,
+    9,
+    8,
+    20,
+    12,
+    35,
+    24,
+    43,
+    17,
+    0,
+    20,
+  ];
   chart6.update();
 }
 
 function update201015() {
-  chart6.data.datasets[0].data = [25, 25, 32, 35, 38, 39, 43, 44, 44, 54, 56, 0, 40];
+  chart6.data.datasets[0].data = [
+    25,
+    25,
+    32,
+    35,
+    38,
+    39,
+    43,
+    44,
+    44,
+    54,
+    56,
+    0,
+    40,
+  ];
   chart6.update();
 }
 
 function update201617() {
-  chart6.data.datasets[0].data = [63, 76, 73, 74, 79, 55, 74, 79, 73, 68, 82, 0, 73];
+  chart6.data.datasets[0].data = [
+    63,
+    76,
+    73,
+    74,
+    79,
+    55,
+    74,
+    79,
+    73,
+    68,
+    82,
+    0,
+    73,
+  ];
   chart6.update();
 }
 
@@ -330,7 +390,7 @@ function update201819() {
     100,
     100,
     0,
-    100
+    100,
   ];
   chart6.update();
 }
@@ -372,6 +432,9 @@ var chart7 = new Chart(chartObject7, {
     scales: {
       yAxes: [
         {
+          gridLines: {
+            display: false,
+          },
           ticks: {
             beginAtZero: true,
           },
@@ -379,6 +442,10 @@ var chart7 = new Chart(chartObject7, {
       ],
       xAxes: [
         {
+          display: false,
+          gridLines: {
+            display: false,
+          },
           ticks: {
             suggestedMin: -2,
             suggestedMax: 0,
@@ -426,6 +493,9 @@ var chart8 = new Chart(chartObject8, {
     scales: {
       yAxes: [
         {
+          gridLines: {
+            display: false,
+          },
           ticks: {
             beginAtZero: true,
           },
@@ -433,6 +503,10 @@ var chart8 = new Chart(chartObject8, {
       ],
       xAxes: [
         {
+          display: false,
+          gridLines: {
+            display: false,
+          },
           ticks: {
             suggestedMin: 0,
             suggestedMax: 20,
@@ -464,7 +538,7 @@ var chart9 = new Chart(chartObject9, {
       'Sonstiges Verarbeitendes Gewerbe ',
       'Unternehmensnahe Dienstleistungen',
       ' ',
-      'Gesamtwirtschaft'
+      'Gesamtwirtschaft',
     ],
     datasets: [
       {
@@ -472,7 +546,7 @@ var chart9 = new Chart(chartObject9, {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [7056, 718, 382, 321, 286, 282, 245, 210, 171, 130,93, 0, 274],
+        data: [7056, 718, 382, 321, 286, 282, 245, 210, 171, 130, 93, 0, 274],
       },
     ],
   },
@@ -482,6 +556,9 @@ var chart9 = new Chart(chartObject9, {
     scales: {
       yAxes: [
         {
+          gridLines: {
+            display: false,
+          },
           ticks: {
             beginAtZero: true,
           },
@@ -489,6 +566,10 @@ var chart9 = new Chart(chartObject9, {
       ],
       xAxes: [
         {
+          display: false,
+          gridLines: {
+            display: false,
+          },
           ticks: {
             suggestedMin: 0,
             suggestedMax: 7100,
