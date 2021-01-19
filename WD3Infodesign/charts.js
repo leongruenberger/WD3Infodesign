@@ -115,13 +115,20 @@ var chart2 = new Chart(chartObject1, {
   },
 
   options: {
-    scales: {
+    scale: {
       angleLines: {
         display: false,
       },
+      angleLines: {
+        color: '#429bcc'
+      },
+      gridLines: {
+        color: '#429bcc'
+      },
       ticks: {
+        
         suggestedMin: 0,
-        suggestedMax: 100,
+        suggestedMax: 70,
       },
     },
   },
@@ -158,13 +165,20 @@ var chart3 = new Chart(chartObject1, {
   },
 
   options: {
-    scales: {
+    scale: {
       angleLines: {
         display: false,
       },
+      angleLines: {
+        color: '#429bcc'
+      },
+      gridLines: {
+        color: '#429bcc'
+      },
       ticks: {
+        
         suggestedMin: 0,
-        suggestedMax: 100,
+        suggestedMax: 70,
       },
     },
   },
@@ -199,13 +213,20 @@ var chart4 = new Chart(chartObject1, {
   },
 
   options: {
-    scales: {
+    scale: {
       angleLines: {
         display: false,
       },
+      angleLines: {
+        color: '#429bcc'
+      },
+      gridLines: {
+        color: '#429bcc'
+      },
       ticks: {
+        
         suggestedMin: 0,
-        suggestedMax: 100,
+        suggestedMax: 70,
       },
     },
   },
