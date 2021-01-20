@@ -65,6 +65,15 @@ var chart1 = new Chart(chartObject1, {
 
   // Configuration options go here
   options: {
+    animation: {
+      tension: {
+        duration: 5000,
+        easing: 'linear',
+        from: 1,
+        to: 0,
+        loop: true,
+      },
+    },
     scales: {
       yAxes: [
         {
@@ -120,13 +129,12 @@ var chart2 = new Chart(chartObject1, {
         display: false,
       },
       angleLines: {
-        color: '#429bcc'
+        color: '#429bcc',
       },
       gridLines: {
-        color: '#429bcc'
+        color: '#429bcc',
       },
       ticks: {
-        
         suggestedMin: 0,
         suggestedMax: 70,
       },
@@ -170,13 +178,12 @@ var chart3 = new Chart(chartObject1, {
         display: false,
       },
       angleLines: {
-        color: '#429bcc'
+        color: '#429bcc',
       },
       gridLines: {
-        color: '#429bcc'
+        color: '#429bcc',
       },
       ticks: {
-        
         suggestedMin: 0,
         suggestedMax: 70,
       },
@@ -218,13 +225,12 @@ var chart4 = new Chart(chartObject1, {
         display: false,
       },
       angleLines: {
-        color: '#429bcc'
+        color: '#429bcc',
       },
       gridLines: {
-        color: '#429bcc'
+        color: '#429bcc',
       },
       ticks: {
-        
         suggestedMin: 0,
         suggestedMax: 70,
       },
