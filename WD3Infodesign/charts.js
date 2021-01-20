@@ -4,6 +4,7 @@ Chart.helpers.merge(Chart.defaults.global.plugins.datalabels, {
   align: 'right',
 });
 
+
 // Global
 Chart.defaults.global.legend.display = false;
 Chart.defaults.global.defaultFontColor = '#429bcc';
@@ -90,6 +91,7 @@ var chart1 = new Chart(chartObject1, {
           },
         },
       ],
+      
     },
   },
 });
@@ -118,12 +120,27 @@ var chart2 = new Chart(chartObject1, {
         label: 'Gesamtwirtschaft',
         backgroundColor: 'rgba(3, 196, 214, 0.4)',
         borderColor: 'rgba(3, 196, 214, 1)',
+        
         data: [60, 56, 34, 22, 11],
       },
     ],
   },
 
   options: {
+    tooltips: {
+
+    },
+    plugins: {
+      datalabels: {
+        formatter: function(value, context) {
+          return context.chart.data.labels[context.value];
+        },
+       align: 'left',
+       font: {
+         size: 16,
+       }, 
+      },
+    },
     scale: {
       angleLines: {
         display: false,
@@ -432,11 +449,21 @@ function update201819() {
 var chartObject7 = document.getElementById('chart7').getContext('2d');
 var chart7 = new Chart(chartObject7, {
   // The type of chart we want to create
-  type: 'horizontalBar',
+  type: 'pie',
 
   // The data for our dataset
   data: {
-    labels: [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+    labels: [      'Finanzdienstleistungen ',
+    'Informations- und Kommunikationstechnologien',
+    'Sonstiges Verarbeitendes Gewerbe',
+    'Elektrotechnik/Maschinenbau',
+    'Unternehmensnahe Dienstleistungen',
+    'Ver- und Entsorgung, Bergbau ',
+    'Großhandel',
+    'Chemie/Pharma',
+    'Fahrzeugbau',
+    'Verkehr, Logistik',
+    'Sonstige Dienstleistungen',],
     datasets: [
       {
         label: 'Ausgaben',
@@ -444,17 +471,17 @@ var chart7 = new Chart(chartObject7, {
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
         data: [
-          -0.24,
-          -1.5,
-          -0.26,
-          -0.68,
-          -0.65,
-          -0.07,
-          -0.07,
-          -0.14,
-          -0.84,
-          -0.16,
-          -0.19,
+          0.24,
+          1.5,
+          0.26,
+          0.68,
+          0.65,
+          0.07,
+          0.07,
+          0.14,
+          0.84,
+          0.16,
+          0.19,
         ],
       },
     ],
@@ -468,9 +495,7 @@ var chart7 = new Chart(chartObject7, {
           gridLines: {
             display: false,
           },
-          ticks: {
-            beginAtZero: true,
-          },
+
         },
       ],
       xAxes: [
@@ -479,10 +504,7 @@ var chart7 = new Chart(chartObject7, {
           gridLines: {
             display: false,
           },
-          ticks: {
-            suggestedMin: -2,
-            suggestedMax: 0,
-          },
+
         },
       ],
     },
@@ -493,7 +515,7 @@ var chart7 = new Chart(chartObject7, {
 var chartObject8 = document.getElementById('chart8').getContext('2d');
 var chart8 = new Chart(chartObject8, {
   // The type of chart we want to create
-  type: 'horizontalBar',
+  type: 'pie',
 
   // The data for our dataset
   data: {
@@ -540,10 +562,7 @@ var chart8 = new Chart(chartObject8, {
           gridLines: {
             display: false,
           },
-          ticks: {
-            suggestedMin: 0,
-            suggestedMax: 20,
-          },
+
         },
       ],
     },
