@@ -42,8 +42,21 @@ p.os {
 }
 
 p.sub {
-  font-family: 'Oswald' !important;
+  font-family: 'Open Sans' !important;
 }
+
+p {
+  font-family: 'Open Sans' !important;
+}
+
+.chart-info-highlight {
+  background-color: #0f405c; 
+  padding: 10px 15px; 
+  width: 400px !important;
+
+  margin-top: 20px;
+}
+
 
 /* Header */
 
@@ -179,6 +192,55 @@ p.sub {
 
   /* .fp-controlArrow.fp-prev {
   } */
+
+.fp-controlArrow {  
+  border: none;
+}
+
+.fp-next {
+
+  &::after {
+    content: "";
+    display: inline;
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+    border: solid #a3c4d6;    
+    border-width: 0 3px 3px 0;
+    z-index: 10;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+}
+
+
+.fp-prev {
+
+  &::after {
+    content: "";
+    display: inline;
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+    border: solid #a3c4d6;    
+    border-width: 0 3px 3px 0;
+    z-index: 10;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+}
+
+  .chart-identifier {
+    position: absolute; 
+    display: inline-block;
+    font-size: 300px;
+    color: #a3c4d6;
+    font-family: 'Open Sans' !important;
+    font-weight: 100;
+    opacity: .1;
+
+    transform: translate(850px, -200px);
+  }
 }
 
 /* Spezifisch */
@@ -211,10 +273,20 @@ p.sub {
 
 .section-2 {
   div.inner-section {
-    width: 70%;
+    width: 90%;
   }
+
+  .hero {
+    margin-top: 50px;
+  }
+
   p.intro-text {
-    margin-top: 3em;
+    font-size: 20px;
+
+    * {
+      font-size: 20px;
+      font-family: 'Open Sans' !important;
+    }
   }
 
   h3 {
@@ -222,20 +294,42 @@ p.sub {
     margin-bottom: 1em;
   }
 
+  .icons {
+    width: 100%;
+    padding-right: 50px;
+  }
+
+  .datengrundlage {
+    border-left: 1px solid #225e80;
+    padding-left: 35px;
+    width: 60%;
+
+    h4 {
+      // color: #366b87;
+      font-weight: 400;
+    }
+  }
+
+  .hero {
+
+  }
+
   div.icons {
+
     div.icon-element {
       display: inline-block;
       width: 33%;
 
       img {
-        height: 40px;
+        height: auto;
+        width: 60px;
         margin-top: 1em;
         margin-bottom: 0.5em;
       }
 
       p.icon-heading {
         color: #a3c4d6;
-        font-size: 20px;
+        font-size: 24px;
         margin: 0;
       }
     }
@@ -306,11 +400,11 @@ p.sub {
     transition: 0.3s;
 
     &:hover {
-      filter: brightness(1.75);
+      filter: brightness(1.35);
     }
 
     .active {
-      filter: brightness(1.75);
+      filter: brightness(2.35);
     }
   }
 
@@ -331,7 +425,7 @@ p.sub {
   }
 }
 
-.section-7 {
+.section-8 {
   .chart-container {
     display: inline-block;
     width: 700px !important;
