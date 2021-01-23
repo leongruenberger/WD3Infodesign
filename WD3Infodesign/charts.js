@@ -56,7 +56,7 @@ var chart1 = new Chart(chartObject1, {
           2.5,
           1.5,
           1.0,
-          0,
+          ' ',
           5,
           8,
         ],
@@ -135,7 +135,7 @@ var chart2 = new Chart(chartObject1, {
         formatter: function(value, context) {
           return context.chart.data.labels[context.value];
         },
-       align: 'left',
+       align: ['right', 'left'],
        backgroundColor: '#a3c4d6',
        font: {
          size: 14,
@@ -193,7 +193,7 @@ var chart3 = new Chart(chartObject1, {
   options: {
     plugins:{
       datalabels:{
-        align: 'center',
+        align: 'left',
         backgroundColor: '#a3c4d6',
         font: {
           size: 14,
@@ -302,7 +302,7 @@ var chart5 = new Chart(chartObject1, {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8, 0, 4, 4],
+        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8, ' ', 4,],
       },
     ],
   },
@@ -357,7 +357,7 @@ var chart6 = new Chart(chartObject6, {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17, 0, 20],
+        data: [6, 11, 17, 9, 8, 20, 12, 35, 24, 43, 17, ' ', 20],
       },
     ],
   },
@@ -401,7 +401,7 @@ function updatevor2010() {
     24,
     43,
     17,
-    0,
+    ' ',
     20,
   ];
   chart6.update();
@@ -420,7 +420,7 @@ function update201015() {
     44,
     54,
     56,
-    0,
+    ' ',
     40,
   ];
   chart6.update();
@@ -439,7 +439,7 @@ function update201617() {
     73,
     68,
     82,
-    0,
+    ' ',
     73,
   ];
   chart6.update();
@@ -458,7 +458,7 @@ function update201819() {
     100,
     100,
     100,
-    0,
+    ' ',
     100,
   ];
   chart6.update();
@@ -639,7 +639,7 @@ var chart9 = new Chart(chartObject9, {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [7056, 718, 382, 321, 286, 282, 245, 210, 171, 130, 93, 0, 274],
+        data: [7056, 718, 382, 321, 286, 282, 245, 210, 171, 130, 93, ' ', 274],
       },
     ],
   },
