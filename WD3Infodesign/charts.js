@@ -136,8 +136,9 @@ var chart2 = new Chart(chartObject1, {
           return context.chart.data.labels[context.value];
         },
        align: 'left',
+       backgroundColor: '#a3c4d6',
        font: {
-         size: 16,
+         size: 14,
        }, 
       },
     },
@@ -190,6 +191,15 @@ var chart3 = new Chart(chartObject1, {
   },
 
   options: {
+    plugins:{
+      datalabels:{
+        align: 'center',
+        backgroundColor: '#a3c4d6',
+        font: {
+          size: 14,
+        }
+      },
+    },
     scale: {
       angleLines: {
         display: false,
@@ -237,6 +247,15 @@ var chart4 = new Chart(chartObject1, {
   },
 
   options: {
+    plugins:{
+      datalabels:{
+        align: 'center',
+        backgroundColor: '#a3c4d6',
+        font: {
+          size: 14,
+        }
+      },
+    },
     scale: {
       angleLines: {
         display: false,
@@ -453,35 +472,36 @@ var chart7 = new Chart(chartObject7, {
 
   // The data for our dataset
   data: {
-    labels: [      'Finanzdienstleistungen ',
-    'Informations- und Kommunikationstechnologien',
-    'Sonstiges Verarbeitendes Gewerbe',
-    'Elektrotechnik/Maschinenbau',
-    'Unternehmensnahe Dienstleistungen',
-    'Ver- und Entsorgung, Bergbau ',
-    'Großhandel',
-    'Chemie/Pharma',
-    'Fahrzeugbau',
-    'Verkehr, Logistik',
-    'Sonstige Dienstleistungen',],
+    labels: [      
+      'Informations- und Kommunikationstechnologien',  
+      'Elektrotechnik/Maschinenbau',
+      'Fahrzeugbau',
+      'Unternehmensnahe Dienstleistungen',
+      'Sonstiges Verarbeitendes Gewerbe',
+      'Finanzdienstleistungen ',
+      'Sonstige Dienstleistungen',
+      'Verkehr, Logistik',
+      'Chemie/Pharma',
+      'Ver- und Entsorgung, Bergbau ',
+      'Großhandel',],
     datasets: [
       {
         label: 'Ausgaben',
-        backgroundColor: '#a3c4d6',
-        hoverBackgroundColor: '#429bcc',
+        backgroundColor: ['#1be995', '#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80'],
+        hoverBackgroundColor: '#a3c4d6',
         barThickness: 5,
         data: [
-          0.24,
           1.5,
-          0.26,
           0.68,
-          0.65,
-          0.07,
-          0.07,
-          0.14,
           0.84,
-          0.16,
+          0.65,
+          0.26,
+          0.24,
           0.19,
+          0.16,
+          0.14,
+          0.07,
+          0.07,
         ],
       },
     ],
@@ -489,6 +509,15 @@ var chart7 = new Chart(chartObject7, {
 
   // Configuration options go here
   options: {
+    plugins:{
+      datalabels:{
+        align: 'center',
+        backgroundColor: '#a3c4d6',
+        font: {
+          size: 18,
+        }
+      },
+    },
     scales: {
       yAxes: [
         {
@@ -535,8 +564,8 @@ var chart8 = new Chart(chartObject8, {
     datasets: [
       {
         label: 'Umsätze',
-        backgroundColor: '#a3c4d6',
-        hoverBackgroundColor: '#429bcc',
+        backgroundColor: [ '#225e80','#1be995','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80'],
+        hoverBackgroundColor: '#a3c4d6',
         barThickness: 5,
         data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
       },
@@ -545,6 +574,18 @@ var chart8 = new Chart(chartObject8, {
 
   // Configuration options go here
   options: {
+    plugins:{
+      datalabels:{
+        align: 'center',
+        backgroundColor: '#a3c4d6',
+        font: {
+          size: 18,
+        }
+      },
+    },
+    animation: {
+      animateScale: true
+    },
     scales: {
       yAxes: [
         {
