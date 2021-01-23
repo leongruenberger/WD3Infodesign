@@ -57,8 +57,7 @@ var chart1 = new Chart(chartObject1, {
           1.5,
           1.0,
           ' ',
-          5,
-          8,
+          5.8,
         ],
       },
     ],
@@ -135,7 +134,7 @@ var chart2 = new Chart(chartObject1, {
         formatter: function(value, context) {
           return context.chart.data.labels[context.value];
         },
-       align: ['right', 'left'],
+       align: 'right',
        backgroundColor: '#a3c4d6',
        font: {
          size: 14,
@@ -302,7 +301,7 @@ var chart5 = new Chart(chartObject1, {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8, ' ', 4,],
+        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8, ' ', 4.4],
       },
     ],
   },
