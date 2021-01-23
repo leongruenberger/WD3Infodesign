@@ -559,7 +559,7 @@ function update201819() {
 var chartObject7 = document.getElementById('chart7').getContext('2d');
 var chart7 = new Chart(chartObject7, {
   // The type of chart we want to create
-  type: 'pie',
+  type: 'doughnut',
 
   // The data for our dataset
   data: {
@@ -626,7 +626,7 @@ var chart7 = new Chart(chartObject7, {
 var chartObject8 = document.getElementById('chart8').getContext('2d');
 var chart8 = new Chart(chartObject8, {
   // The type of chart we want to create
-  type: 'pie',
+  type: 'doughnut',
 
   // The data for our dataset
   data: {
@@ -668,6 +668,17 @@ var chart8 = new Chart(chartObject8, {
 
   // Configuration options go here
   options: {
+    scales:{
+      yAxes:{
+        gridLines: {
+          display: true,
+        },
+        ticks: {
+          suggestedMin: 0,
+          suggestedMax: 2,
+        },
+      },
+    },
     plugins: {
       datalabels: {
         align: 'center',
