@@ -561,7 +561,7 @@ var chart7 = new Chart(chartObject7, {
       'Verkehr, Logistik',
       'Chemie/Pharma',
       'Ver- und Entsorgung, Bergbau ',
-      'Großhandel',],
+      'Großhandel'],
     datasets: [
       {
         label: 'Ausgaben',
@@ -671,7 +671,7 @@ var chart8 = new Chart(chartObject8, {
       },
     },
     animation: {
-      animateScale: true
+      animateScale: true,
     },
     scales: {
       yAxes: [
@@ -742,7 +742,7 @@ var chart9 = new Chart(chartObject9, {
                 sum += data;
             });
             if(value > 0){
-              let percentage = value+"€";
+              let percentage = value+" Tsd. €";
               return percentage;}
         },      
         font: {
@@ -769,7 +769,7 @@ var chart9 = new Chart(chartObject9, {
           },
           ticks: {
             suggestedMin: 0,
-            suggestedMax: 7100,
+            suggestedMax: 9000,
           },
         },
       ],
