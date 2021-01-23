@@ -103,8 +103,9 @@ var chart1 = new Chart(chartObject1, {
                 dataArr.map(data => {
                     sum += data;
                 });
+                if(value > 0){
                 let percentage = value+"%";
-                return percentage;
+                return percentage;}
             },
         }
     }
@@ -154,8 +155,9 @@ var chart2 = new Chart(chartObject1, {
               dataArr.map(data => {
                   sum += data;
               });
-              let percentage = value+"%";
-              return percentage;
+              if(value > 0){
+                let percentage = value+"%";
+                return percentage;}
           },       
        align: 'left',
        backgroundColor: '#a3c4d6',
@@ -224,8 +226,9 @@ var chart3 = new Chart(chartObject1, {
             dataArr.map(data => {
                 sum += data;
             });
-            let percentage = value+"%";
-            return percentage;
+            if(value > 0){
+              let percentage = value+"%";
+              return percentage;}
         },      
         align: 'center',
         backgroundColor: '#a3c4d6',
@@ -292,8 +295,9 @@ var chart4 = new Chart(chartObject1, {
             dataArr.map(data => {
                 sum += data;
             });
-            let percentage = value+"%";
-            return percentage;
+            if(value > 0){
+              let percentage = value+"%";
+              return percentage;}
         },      
         align: 'center',
         backgroundColor: '#a3c4d6',
@@ -363,8 +367,9 @@ var chart5 = new Chart(chartObject1, {
             dataArr.map(data => {
                 sum += data;
             });
-            let percentage = value+"%";
-            return percentage;
+            if(value > 0){
+              let percentage = value+"%";
+              return percentage;}
         },  
       },
     },
@@ -431,8 +436,9 @@ var chart6 = new Chart(chartObject6, {
             dataArr.map(data => {
                 sum += data;
             });
-            let percentage = value+"%";
-            return percentage;
+            if(value > 0){
+              let percentage = value+"%";
+              return percentage;}
         },  
       },
     },
@@ -735,8 +741,9 @@ var chart9 = new Chart(chartObject9, {
             dataArr.map(data => {
                 sum += data;
             });
-            let percentage = value+" €";
-            return percentage;
+            if(value > 0){
+              let percentage = value+"€";
+              return percentage;}
         },      
         font: {
           size: 14,
