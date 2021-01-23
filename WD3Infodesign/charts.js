@@ -89,9 +89,21 @@ var chart1 = new Chart(chartObject1, {
             display: false,
           },
         },
-      ],
-      
+      ],      
     },
+    plugins: {
+        datalabels: {
+            formatter: (value, ctx) => {
+                let sum = 0;
+                let dataArr = ctx.chart.data.datasets[0].data;
+                dataArr.map(data => {
+                    sum += data;
+                });
+                let percentage = value+"%";
+                return percentage;
+            },
+        }
+    }
   },
 });
 
@@ -131,15 +143,24 @@ var chart2 = new Chart(chartObject1, {
     },
     plugins: {
       datalabels: {
-        formatter: function(value, context) {
-          return context.chart.data.labels[context.value];
-        },
-       align: 'right',
+          formatter: (value, ctx) => {
+              let sum = 0;
+              let dataArr = ctx.chart.data.datasets[0].data;
+              dataArr.map(data => {
+                  sum += data;
+              });
+              let percentage = value+"%";
+              return percentage;
+          },       
+       align: 'left',
        backgroundColor: '#a3c4d6',
        font: {
          size: 14,
        }, 
-      },
+      }, 
+
+
+
     },
     scale: {
       angleLines: {
@@ -192,7 +213,16 @@ var chart3 = new Chart(chartObject1, {
   options: {
     plugins:{
       datalabels:{
-        align: 'left',
+        formatter: (value, ctx) => {
+            let sum = 0;
+            let dataArr = ctx.chart.data.datasets[0].data;
+            dataArr.map(data => {
+                sum += data;
+            });
+            let percentage = value+"%";
+            return percentage;
+        },      
+        align: 'center',
         backgroundColor: '#a3c4d6',
         font: {
           size: 14,
@@ -248,6 +278,15 @@ var chart4 = new Chart(chartObject1, {
   options: {
     plugins:{
       datalabels:{
+        formatter: (value, ctx) => {
+            let sum = 0;
+            let dataArr = ctx.chart.data.datasets[0].data;
+            dataArr.map(data => {
+                sum += data;
+            });
+            let percentage = value+"%";
+            return percentage;
+        },      
         align: 'center',
         backgroundColor: '#a3c4d6',
         font: {
@@ -308,6 +347,19 @@ var chart5 = new Chart(chartObject1, {
 
   // Configuration options go here
   options: {
+    plugins:{
+      datalabels:{
+        formatter: (value, ctx) => {
+            let sum = 0;
+            let dataArr = ctx.chart.data.datasets[0].data;
+            dataArr.map(data => {
+                sum += data;
+            });
+            let percentage = value+"%";
+            return percentage;
+        },  
+      },
+    },
     scales: {
       yAxes: [
         {
@@ -363,6 +415,19 @@ var chart6 = new Chart(chartObject6, {
 
   // Configuration options go here
   options: {
+    plugins:{
+      datalabels:{
+        formatter: (value, ctx) => {
+            let sum = 0;
+            let dataArr = ctx.chart.data.datasets[0].data;
+            dataArr.map(data => {
+                sum += data;
+            });
+            let percentage = value+"%";
+            return percentage;
+        },  
+      },
+    },
     scales: {
       yAxes: [
         {
@@ -510,6 +575,15 @@ var chart7 = new Chart(chartObject7, {
   options: {
     plugins:{
       datalabels:{
+            // formatter: (value, ctx) => {
+            //     let sum = 0;
+            //     let dataArr = ctx.chart.data.datasets[0].data;
+            //     dataArr.map(data => {
+            //         sum += data;
+            //     });
+            //     let percentage = value+"MRD €";
+            //     return percentage;
+            // },  
         align: 'center',
         backgroundColor: '#a3c4d6',
         font: {
@@ -645,6 +719,22 @@ var chart9 = new Chart(chartObject9, {
 
   // Configuration options go here
   options: {
+    plugins: {      
+      datalabels:{
+        formatter: (value, ctx) => {
+            let sum = 0;
+            let dataArr = ctx.chart.data.datasets[0].data;
+            dataArr.map(data => {
+                sum += data;
+            });
+            let percentage = value+" €";
+            return percentage;
+        },      
+        font: {
+          size: 14,
+        }
+      },
+    },
     scales: {
       yAxes: [
         {

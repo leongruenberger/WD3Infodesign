@@ -22,6 +22,9 @@
 	<!-- Fullpage.js -->
 	<link rel="stylesheet" href="Fullpage.js/fullpage.css">
 	<script src="Fullpage.js/fullpage.js"></script>
+
+
+
 </head>
 
 <body>
@@ -219,7 +222,7 @@
 				in % aller KI einsetzenden Unternehmen
 			</p>
 
-			<div class="chart-container">
+			<div class="chart-container lazy">
 				<canvas id="chart1"></canvas>
 			</div>
 
@@ -245,7 +248,7 @@
 			<p class="sub">Unternehmen der deutschen Wirtschaft 2019</p>
 			<div class="slide">
 
-				<div class="chart-container" style="transform: translateX(100px);">
+				<div class="chart-container lazy" style="transform: translateX(100px);">
 					<canvas id="chart2"></canvas>
 				</div>
 				<div class="description-container" style="transform: translate(-300px, 50px);">
@@ -400,10 +403,10 @@
 		<div class="section section-8" id="page8 section-8">
 			<h2 class="text-uppercase">Umsatz</h2>
 			<p class="sub">von deutschen Unternehmen 2019, die KI verwenden</p>
-			<div class="chart-container chart7">
+			<div class="chart-container chart7 lazy">
 				<canvas id="chart7"></canvas>
 			</div>
-			<div class="chart-container">
+			<div class="chart-container lazy">
 				<canvas id="chart8"></canvas>
 			</div>
 			<div class="description-container">
@@ -506,6 +509,28 @@
 			});
 		});
 	</script>
+
+	<!-- LAZY LOAD -->
+	<script>
+		// $(window).scroll(function() {
+		// var hT = $('#scroll-to').offset().top,
+		// 	hH = $('#scroll-to').outerHeight(),
+		// 	wH = $(window).height(),
+		// 	wS = $(this).scrollTop();
+		// if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+		// 	$('h1').addClass('view')
+		// } else {
+		// 	$('h1').removeClass('view')
+		// }
+		// });
+		$(function() {
+				$('.lazy').Lazy();
+			});
+				
+	</script>
+
+	
+<script type="text/javascript" src="jquery.lazy.min.js"></script>
 
 </body>
 
