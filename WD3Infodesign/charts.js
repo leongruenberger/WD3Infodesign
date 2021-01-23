@@ -84,6 +84,10 @@ var chart1 = new Chart(chartObject1, {
       ],
       xAxes: [
         {
+          ticks: {
+            suggestedMin: 0,
+            suggestedMax: 20,
+          },
           display: false,
           gridLines: {
             display: false,
@@ -125,13 +129,14 @@ var chart2 = new Chart(chartObject1, {
         label: 'Informations- und Kommunikationstechnologien',
         backgroundColor: 'rgba(163, 196, 214, 0.4)',
         borderColor: 'rgba(163, 196, 214, 1)',
+        hoverBackgroundColor: 'rgba(163, 196, 214, 0,3)',
         data: [66, 54, 35, 9, 11],
       },
       {
         label: 'Gesamtwirtschaft',
         backgroundColor: 'rgba(3, 196, 214, 0.4)',
         borderColor: 'rgba(3, 196, 214, 1)',
-        
+        hoverBackgroundColor: 'rgba(163, 196, 214, 0,3)',
         data: [60, 56, 34, 22, 11],
       },
     ],
@@ -264,12 +269,14 @@ var chart4 = new Chart(chartObject1, {
         label: 'Informations- und Kommunikationstechnologien',
         backgroundColor: 'rgba(163, 196, 214, 0.4)',
         borderColor: 'rgba(163, 196, 214, 1)',
+        hoverBackgroundColor: '#a3c4d6',
         data: [59, 47, 55, 23],
       },
       {
         label: 'Gesamtwirtschaft',
         backgroundColor: 'rgba(3, 196, 214, 0.4)',
         borderColor: 'rgba(3, 196, 214, 1)',
+        hoverBackgroundColor: '#a3c4d6',
         data: [60, 56, 34, 22],
       },
     ],
@@ -278,6 +285,7 @@ var chart4 = new Chart(chartObject1, {
   options: {
     plugins:{
       datalabels:{
+
         formatter: (value, ctx) => {
             let sum = 0;
             let dataArr = ctx.chart.data.datasets[0].data;
@@ -444,7 +452,7 @@ var chart6 = new Chart(chartObject6, {
           },
           ticks: {
             suggestedMin: 0,
-            suggestedMax: 100,
+            suggestedMax: 110,
           },
         },
       ],
