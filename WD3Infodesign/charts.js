@@ -4,7 +4,6 @@ Chart.helpers.merge(Chart.defaults.global.plugins.datalabels, {
   align: 'right',
 });
 
-
 // Global
 Chart.defaults.global.legend.display = false;
 Chart.defaults.global.defaultFontColor = '#429bcc';
@@ -93,22 +92,23 @@ var chart1 = new Chart(chartObject1, {
             display: false,
           },
         },
-      ],      
+      ],
     },
     plugins: {
-        datalabels: {
-            formatter: (value, ctx) => {
-                let sum = 0;
-                let dataArr = ctx.chart.data.datasets[0].data;
-                dataArr.map(data => {
-                    sum += data;
-                });
-                if(value > 0){
-                let percentage = value+"%";
-                return percentage;}
-            },
-        }
-    }
+      datalabels: {
+        formatter: (value, ctx) => {
+          let sum = 0;
+          let dataArr = ctx.chart.data.datasets[0].data;
+          dataArr.map((data) => {
+            sum += data;
+          });
+          if (value > 0) {
+            let percentage = value + '%';
+            return percentage;
+          }
+        },
+      },
+    },
   },
 });
 
@@ -144,30 +144,26 @@ var chart2 = new Chart(chartObject1, {
   },
 
   options: {
-    tooltips: {
-
-    },
+    tooltips: {},
     plugins: {
       datalabels: {
-          formatter: (value, ctx) => {
-              let sum = 0;
-              let dataArr = ctx.chart.data.datasets[0].data;
-              dataArr.map(data => {
-                  sum += data;
-              });
-              if(value > 0){
-                let percentage = value+"%";
-                return percentage;}
-          },       
-       align: 'left',
-       backgroundColor: '#a3c4d6',
-       font: {
-         size: 14,
-       }, 
-      }, 
-
-
-
+        formatter: (value, ctx) => {
+          let sum = 0;
+          let dataArr = ctx.chart.data.datasets[0].data;
+          dataArr.map((data) => {
+            sum += data;
+          });
+          if (value > 0) {
+            let percentage = value + '%';
+            return percentage;
+          }
+        },
+        align: 'left',
+        backgroundColor: '#a3c4d6',
+        font: {
+          size: 14,
+        },
+      },
     },
     scale: {
       angleLines: {
@@ -218,23 +214,24 @@ var chart3 = new Chart(chartObject1, {
   },
 
   options: {
-    plugins:{
-      datalabels:{
+    plugins: {
+      datalabels: {
         formatter: (value, ctx) => {
-            let sum = 0;
-            let dataArr = ctx.chart.data.datasets[0].data;
-            dataArr.map(data => {
-                sum += data;
-            });
-            if(value > 0){
-              let percentage = value+"%";
-              return percentage;}
-        },      
+          let sum = 0;
+          let dataArr = ctx.chart.data.datasets[0].data;
+          dataArr.map((data) => {
+            sum += data;
+          });
+          if (value > 0) {
+            let percentage = value + '%';
+            return percentage;
+          }
+        },
         align: 'center',
         backgroundColor: '#a3c4d6',
         font: {
           size: 14,
-        }
+        },
       },
     },
     scale: {
@@ -286,24 +283,24 @@ var chart4 = new Chart(chartObject1, {
   },
 
   options: {
-    plugins:{
-      datalabels:{
-
+    plugins: {
+      datalabels: {
         formatter: (value, ctx) => {
-            let sum = 0;
-            let dataArr = ctx.chart.data.datasets[0].data;
-            dataArr.map(data => {
-                sum += data;
-            });
-            if(value > 0){
-              let percentage = value+"%";
-              return percentage;}
-        },      
+          let sum = 0;
+          let dataArr = ctx.chart.data.datasets[0].data;
+          dataArr.map((data) => {
+            sum += data;
+          });
+          if (value > 0) {
+            let percentage = value + '%';
+            return percentage;
+          }
+        },
         align: 'center',
         backgroundColor: '#a3c4d6',
         font: {
           size: 14,
-        }
+        },
       },
     },
     scale: {
@@ -352,25 +349,40 @@ var chart5 = new Chart(chartObject1, {
         backgroundColor: '#a3c4d6',
         hoverBackgroundColor: '#429bcc',
         barThickness: 5,
-        data: [14.7, 9.4, 7.8, 4.4, 3.1, 2.1, 2.1, 2.0, 1.2, 1.1, 0.8, ' ', 4.4],
+        data: [
+          14.7,
+          9.4,
+          7.8,
+          4.4,
+          3.1,
+          2.1,
+          2.1,
+          2.0,
+          1.2,
+          1.1,
+          0.8,
+          ' ',
+          4.4,
+        ],
       },
     ],
   },
 
   // Configuration options go here
   options: {
-    plugins:{
-      datalabels:{
+    plugins: {
+      datalabels: {
         formatter: (value, ctx) => {
-            let sum = 0;
-            let dataArr = ctx.chart.data.datasets[0].data;
-            dataArr.map(data => {
-                sum += data;
-            });
-            if(value > 0){
-              let percentage = value+"%";
-              return percentage;}
-        },  
+          let sum = 0;
+          let dataArr = ctx.chart.data.datasets[0].data;
+          dataArr.map((data) => {
+            sum += data;
+          });
+          if (value > 0) {
+            let percentage = value + '%';
+            return percentage;
+          }
+        },
       },
     },
     scales: {
@@ -428,18 +440,19 @@ var chart6 = new Chart(chartObject6, {
 
   // Configuration options go here
   options: {
-    plugins:{
-      datalabels:{
+    plugins: {
+      datalabels: {
         formatter: (value, ctx) => {
-            let sum = 0;
-            let dataArr = ctx.chart.data.datasets[0].data;
-            dataArr.map(data => {
-                sum += data;
-            });
-            if(value > 0){
-              let percentage = value+"%";
-              return percentage;}
-        },  
+          let sum = 0;
+          let dataArr = ctx.chart.data.datasets[0].data;
+          dataArr.map((data) => {
+            sum += data;
+          });
+          if (value > 0) {
+            let percentage = value + '%';
+            return percentage;
+          }
+        },
       },
     },
     scales: {
@@ -542,7 +555,7 @@ function update201819() {
   chart6.update();
 }
 
-//Chart 7 Ausgaben Doppelseitige Balken
+//Chart 7 Ausgaben (Umsatz)
 var chartObject7 = document.getElementById('chart7').getContext('2d');
 var chart7 = new Chart(chartObject7, {
   // The type of chart we want to create
@@ -550,8 +563,8 @@ var chart7 = new Chart(chartObject7, {
 
   // The data for our dataset
   data: {
-    labels: [      
-      'Informations- und Kommunikationstechnologien',  
+    labels: [
+      'Informations- und Kommunikationstechnologien',
       'Elektrotechnik/Maschinenbau',
       'Fahrzeugbau',
       'Unternehmensnahe Dienstleistungen',
@@ -561,68 +574,50 @@ var chart7 = new Chart(chartObject7, {
       'Verkehr, Logistik',
       'Chemie/Pharma',
       'Ver- und Entsorgung, Bergbau ',
-      'Großhandel'],
+      'Großhandel',
+    ],
     datasets: [
       {
         label: 'Ausgaben',
-        backgroundColor: ['#1be995', '#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80'],
+        backgroundColor: [
+          '#1be995',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+        ],
         hoverBackgroundColor: '#a3c4d6',
         barThickness: 5,
-        data: [
-          1.5,
-          0.68,
-          0.84,
-          0.65,
-          0.26,
-          0.24,
-          0.19,
-          0.16,
-          0.14,
-          0.07,
-          0.07,
-        ],
+        data: [1.5, 0.68, 0.84, 0.65, 0.26, 0.24, 0.19, 0.16, 0.14, 0.07, 0.07],
       },
     ],
   },
 
   // Configuration options go here
   options: {
-    plugins:{
-      datalabels:{
-            // formatter: (value, ctx) => {
-            //     let sum = 0;
-            //     let dataArr = ctx.chart.data.datasets[0].data;
-            //     dataArr.map(data => {
-            //         sum += data;
-            //     });
-            //     let percentage = value+"MRD €";
-            //     return percentage;
-            // },  
+    plugins: {
+      datalabels: {
+        // formatter: (value, ctx) => {
+        //     let sum = 0;
+        //     let dataArr = ctx.chart.data.datasets[0].data;
+        //     dataArr.map(data => {
+        //         sum += data;
+        //     });
+        //     let percentage = value+"MRD €";
+        //     return percentage;
+        // },
         align: 'center',
         backgroundColor: '#a3c4d6',
         font: {
           size: 18,
-        }
+        },
       },
-    },
-    scales: {
-      yAxes: [
-        {
-          gridLines: {
-            display: false,
-          },
-
-        },
-      ],
-      xAxes: [
-        {
-          display: false,
-          gridLines: {
-            display: false,
-          },
-
-        },
-      ],
     },
   },
 });
@@ -651,7 +646,19 @@ var chart8 = new Chart(chartObject8, {
     datasets: [
       {
         label: 'Umsätze',
-        backgroundColor: [ '#225e80','#1be995','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80','#225e80'],
+        backgroundColor: [
+          '#225e80',
+          '#1be995',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+          '#225e80',
+        ],
         hoverBackgroundColor: '#a3c4d6',
         barThickness: 5,
         data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
@@ -661,43 +668,22 @@ var chart8 = new Chart(chartObject8, {
 
   // Configuration options go here
   options: {
-    plugins:{
-      datalabels:{
+    plugins: {
+      datalabels: {
         align: 'center',
         backgroundColor: '#a3c4d6',
         font: {
           size: 18,
-        }
+        },
       },
     },
     animation: {
       animateScale: true,
     },
-    scales: {
-      yAxes: [
-        {
-          gridLines: {
-            display: false,
-          },
-          ticks: {
-            beginAtZero: true,
-          },
-        },
-      ],
-      xAxes: [
-        {
-          display: false,
-          gridLines: {
-            display: false,
-          },
-
-        },
-      ],
-    },
   },
 });
 
-//Chart 9 Umsätze Doppelseitige Balken
+//Chart 9 Ausgaben
 var chartObject9 = document.getElementById('chart9').getContext('2d');
 var chart9 = new Chart(chartObject9, {
   // The type of chart we want to create
@@ -733,21 +719,22 @@ var chart9 = new Chart(chartObject9, {
 
   // Configuration options go here
   options: {
-    plugins: {      
-      datalabels:{
+    plugins: {
+      datalabels: {
         formatter: (value, ctx) => {
-            let sum = 0;
-            let dataArr = ctx.chart.data.datasets[0].data;
-            dataArr.map(data => {
-                sum += data;
-            });
-            if(value > 0){
-              let percentage = value+" Tsd. €";
-              return percentage;}
-        },      
+          let sum = 0;
+          let dataArr = ctx.chart.data.datasets[0].data;
+          dataArr.map((data) => {
+            sum += data;
+          });
+          if (value > 0) {
+            let percentage = value + ' Tsd. €';
+            return percentage;
+          }
+        },
         font: {
           size: 14,
-        }
+        },
       },
     },
     scales: {

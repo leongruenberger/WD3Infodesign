@@ -203,7 +203,7 @@ p {
 }
 
 .section .fp-next::after {
-  content: "";
+  content: '';
   display: inline;
   position: absolute;
   width: 50px;
@@ -216,7 +216,7 @@ p {
 }
 
 .section .fp-prev::after {
-  content: "";
+  content: '';
   display: inline;
   position: absolute;
   width: 50px;
@@ -235,7 +235,7 @@ p {
   color: #a3c4d6;
   font-family: 'Open Sans' !important;
   font-weight: 100;
-  opacity: .1;
+  opacity: 0.1;
   -webkit-transform: translate(850px, -200px);
           transform: translate(850px, -200px);
 }
@@ -429,5 +429,9 @@ p {
   position: absolute;
   top: 290px;
   left: 1200px;
+}
+
+.section-8 div.chart-container {
+  height: 425px;
 }
 /*# sourceMappingURL=style.css.map */
