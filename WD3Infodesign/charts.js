@@ -159,7 +159,8 @@ var chart2 = new Chart(chartObject1, {
           }
         },
         align: 'left',
-        backgroundColor: '#a3c4d6',
+        display: 'auto',
+        backgroundColor: '#f2f2f2',
         font: {
           size: 14,
         },
@@ -176,6 +177,7 @@ var chart2 = new Chart(chartObject1, {
         color: '#429bcc',
       },
       ticks: {
+        display: false,
         suggestedMin: 0,
         suggestedMax: 70,
       },
@@ -228,7 +230,8 @@ var chart3 = new Chart(chartObject1, {
           }
         },
         align: 'center',
-        backgroundColor: '#a3c4d6',
+        display: 'auto',
+        backgroundColor: '#f2f2f2',
         font: {
           size: 14,
         },
@@ -245,6 +248,7 @@ var chart3 = new Chart(chartObject1, {
         color: '#429bcc',
       },
       ticks: {
+        display: false,
         suggestedMin: 0,
         suggestedMax: 70,
       },
@@ -296,8 +300,9 @@ var chart4 = new Chart(chartObject1, {
             return percentage;
           }
         },
-        align: 'center',
-        backgroundColor: '#a3c4d6',
+        align: 'start',
+        display: 'auto',
+        backgroundColor: '#f2f2f2',
         font: {
           size: 14,
         },
@@ -314,6 +319,7 @@ var chart4 = new Chart(chartObject1, {
         color: '#429bcc',
       },
       ticks: {
+        display: false,
         suggestedMin: 0,
         suggestedMax: 70,
       },
