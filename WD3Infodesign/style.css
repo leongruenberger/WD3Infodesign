@@ -434,4 +434,24 @@ p {
 .section-8 div.chart-container {
   height: 425px;
 }
+
+.section-8 .beide-charts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-8 .description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-8 .description-container .description-umsatz {
+  width: 600px;
+}
 /*# sourceMappingURL=style.css.map */

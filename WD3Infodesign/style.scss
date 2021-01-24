@@ -441,3 +441,19 @@ p {
 .section-8 div.chart-container {
   height: 425px;
 }
+
+.section-8 {
+  .beide-charts {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .description-container {
+    display: flex;
+    justify-content: space-around;
+
+    .description-umsatz {
+      width: 600px;
+    }
+  }
+}
