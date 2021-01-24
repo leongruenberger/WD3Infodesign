@@ -618,8 +618,9 @@ var chart7 = new Chart(chartObject7, {
         //     let percentage = value+"MRD €";
         //     return percentage;
         // },
-        align: 'center',
-        backgroundColor: '#a3c4d6',
+        align: 'start',
+        display: 'auto',
+        backgroundColor: '#f2f2f2',
         font: {
           size: 18,
         },
@@ -687,8 +688,9 @@ var chart8 = new Chart(chartObject8, {
     },
     plugins: {
       datalabels: {
-        align: 'center',
-        backgroundColor: '#a3c4d6',
+        align: 'start',
+        display: 'auto',
+        backgroundColor: '#f2f2f2',
         font: {
           size: 18,
         },
