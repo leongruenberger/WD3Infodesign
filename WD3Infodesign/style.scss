@@ -343,7 +343,7 @@ p {
     .description-container {
       width: 300px;
       float: right;
-      transform: translate(-250px, 0px);
+      transform: translate(-250px, 0px);      
     }
 
     .chart-info {
@@ -453,7 +453,7 @@ p {
 
   .description-container {
     display: flex;
-    justify-content: space-around;
+    // justify-content: space-around;
 
     .description-umsatz {
       width: 600px;
