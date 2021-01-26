@@ -460,3 +460,94 @@ p {
     }
   }
 }
+
+.finanzLegende {
+  position: absolute;
+  display: inline;
+  width: 900px;
+  height: 220px;
+  transition: .3s;
+  top: 0px !important;
+  right: 0px !important;
+  background-color: #022539;
+  transform: translateX(900px);
+  transition: .3s;
+  z-index: 2000;
+  box-shadow: 3px 3px 20px #03141d77;
+}
+
+.finanzLegende * {
+  font-family: 'Open Sans' !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.finanzLegende p {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.finanzLegende li {
+  margin-top: 5px;
+}
+
+.buttons-legende {
+  display: inline; 
+  position: absolute;
+  transform: translate(540px, -80px);
+}
+
+.m-slideOut {
+  /* visibility: hidden;
+  transition: visibility 0s linear 300ms, opacity 300ms; */
+  transform: translateX(900px);
+}
+
+.m-slideIn {
+  /* visibility: visible;
+  transition: visibility 0s linear 300s, opacity 300ms; */
+  transform: translateX(000px);
+}
+
+.button-yo {
+  box-shadow: none !important;
+  background-color: #ffffff00 !important;
+  border: 1px solid #a3c4d6 !important;
+  color: #a3c4d6;
+  font-family: 'Open Sans' !important;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.chart-overlay1 {
+  position: absolute !important; 
+  display: inline !important; 
+  transform: translate(-100%, 0px); 
+  z-index: 1000;
+  opacity: 0;
+}
+
+.chart-overlay2 {
+  position: absolute !important; 
+  display: inline !important; 
+  transform: translate(-710px, 0px); 
+  z-index: 1000;
+  opacity: 0;
+}
+
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0 !important;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1 !important;
+  transition: visibility 0s linear 0s, opacity 300ms;
+}

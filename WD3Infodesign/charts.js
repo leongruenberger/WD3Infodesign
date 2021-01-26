@@ -646,78 +646,343 @@ function update201819() {
 //   },
 // });
 
-// //Chart 8 Umsätze Doppelseitige Balken
-// var chartObject8 = document.getElementById('chart8').getContext('2d');
-// var chart8 = new Chart(chartObject8, {
-//   // The type of chart we want to create
-//   type: 'doughnut',
 
-//   // The data for our dataset
-//   data: {
-//     labels: [
-//       'Finanzdienstleistungen ',
-//       'Informations- und Kommunikationstechnologien',
-//       'Sonstiges Verarbeitendes Gewerbe',
-//       'Elektrotechnik/Maschinenbau',
-//       'Unternehmensnahe Dienstleistungen',
-//       'Ver- und Entsorgung, Bergbau ',
-//       'Großhandel',
-//       'Chemie/Pharma',
-//       'Fahrzeugbau',
-//       'Verkehr, Logistik',
-//       'Sonstige Dienstleistungen',
-//     ],
-//     datasets: [
-//       {
-//         label: 'Umsätze',
-//         backgroundColor: [
-//           '#225e80',
-//           '#1be995',
-//           '#225e80',
-//           '#225e80',
-//           '#225e80',
-//           '#225e80',
-//           '#225e80',
-//           '#225e80',
-//           '#225e80',
-//           '#225e80',
-//           '#225e80',
-//         ],
-//         hoverBackgroundColor: '#a3c4d6',
-//         barThickness: 5,
-//         data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
-//       },
-//     ],
-//   },
 
-//   // Configuration options go here
-//   options: {
-//     scales:{
-//       yAxes:{
-//         gridLines: {
-//           display: true,
-//         },
-//         ticks: {
-//           suggestedMin: 0,
-//           suggestedMax: 2,
-//         },
-//       },
-//     },
-//     plugins: {
-//       datalabels: {
-//         align: 'start',
-//         display: 'auto',
-//         backgroundColor: '#f2f2f2',
-//         font: {
-//           size: 18,
-//         },
-//       },
-//     },
-//     animation: {
-//       animateScale: true,
-//     },
-//   },
-// });
+
+
+
+
+//  //Chart 8 Umsätze Doppelseitige Balken
+//  var chartObject8 = document.getElementById('chart8').getContext('2d');
+//  var chart8 = new Chart(chartObject8, {
+//    // The type of chart we want to create
+//    type: 'doughnut',
+
+//    // The data for our dataset
+//    data: {
+//      labels: [
+//        'Finanzdienstleistungen',
+//        'Informations- und Kommunikationstechnologien',
+//        'Sonstiges Verarbeitendes Gewerbe',
+//        'Elektrotechnik/Maschinenbau',
+//        'Unternehmensnahe Dienstleistungen',
+//        'Ver- und Entsorgung, Bergbau',
+//        'Großhandel',
+//        'Chemie/Pharma',
+//        'Fahrzeugbau',
+//        'Verkehr, Logistik',
+//        'Sonstige Dienstleistungen',
+//      ],
+//      datasets: [
+//        {
+//          label: 'Umsätze',
+//          backgroundColor: [
+//            '#225e80',
+//            '#1be995',
+//            '#225e80',
+//            '#225e80',
+//            '#225e80',
+//            '#225e80',
+//            '#225e80',
+//            '#225e80',
+//            '#225e80',
+//            '#225e80',
+//            '#225e80',
+//          ],
+//          hoverBackgroundColor: '#a3c4d6',
+//          barThickness: 1,
+//          borderColor: '#012438',
+//          borderWidth: 5,
+//          data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
+//        },
+//      ],
+//    },
+
+//    // Configuration options go here
+//    options: {
+//      scales:{
+//        yAxes:{
+//          gridLines: {
+//            display: true,
+//          },
+//          ticks: {
+//            suggestedMin: 0,
+//            suggestedMax: 2,
+//          },
+//        },
+//      },
+//      plugins: {
+//        datalabels: {
+//          align: 'start',
+//          display: 'auto',
+//          color: '#fff',
+//          padding: -25,
+//          // backgroundColor: '#f2f2f2',
+//          font: {
+//            size: 14,
+//          },
+//        },
+//      },
+//      animation: {
+//          tension: {
+//              duration: 5000,
+//              easing: 'ease',
+//              from: 1,
+//              to: 0,
+//              loop: true,
+//          },
+//      },
+//     //  onClick: () => {
+//     //     chart8.data.datasets[0].backgroundColor = 
+//     //     [
+//     //       '#225e80',
+//     //       '#1be995',
+//     //       '#225e80',
+//     //       '#1be995',
+//     //       '#225e80',
+//     //       '#1be995',
+//     //       '#225e80',
+//     //       '#1be995',
+//     //       '#225e80',
+//     //       '#1be995',
+//     //       '#225e80',
+//     //     ];
+//     //     chart8.update();
+
+//     //     document.getElementById('finanzLegende').style.opacity = 1;
+//     //  }
+//    },
+//  });
+
+
+// // Einfärben
+//  function colorizeFinancial() {
+
+//   var y = document.getElementById('finanzLegende');
+
+//   chart8.data.datasets[0].backgroundColor = 
+//   [
+//     '#6143BF',
+//     '#1be995',
+//     '#33ADAE',
+//     '#34D633',
+//     '#B3F134',
+//     '#FFFF33',
+//     '#FEDC34',
+//     '#FFBB34',
+//     '#FF9034',
+//     '#FF3334',
+//     '#D83391',
+//   ];
+//   chart8.update();
+
+
+//   // if (y.style.opacity == 0) {
+//   //   y.style.opacity = 1;
+//   // } else {
+//   //   y.style.opacity = 0;
+//   // }
+//   document.getElementById('finanzLegende').style.transform = "translateX(0)";
+// }
+
+
+// // In Original-Farben färben
+// function colorizeFinancialOriginal() {
+
+//   var y = document.getElementById('finanzLegende');
+
+//   chart8.data.datasets[0].backgroundColor = 
+//   [
+//     '#225e80',
+//     '#1be995',
+//     '#225e80',
+//     '#225e80',
+//     '#225e80',
+//     '#225e80',
+//     '#225e80',
+//     '#225e80',
+//     '#225e80',
+//     '#225e80',
+//     '#225e80',
+//   ];  
+//   chart8.update();
+//   document.getElementById('finanzLegende').style.transform = "translateX(400px)";
+// }
+
+
+
+                    //Chart 10 Umsätze - Overlay
+                    var chartObject8 = document.getElementById('chart10').getContext('2d');
+                    var chart10 = new Chart(chartObject8, {
+                      // The type of chart we want to create
+                      type: 'doughnut',
+
+                      // The data for our dataset
+                      data: {
+                        labels: [
+                          'Finanzdienstleistungen ',
+                          'Informations- und Kommunikationstechnologien',
+                          'Sonstiges Verarbeitendes Gewerbe',
+                          'Elektrotechnik/Maschinenbau',
+                          'Unternehmensnahe Dienstleistungen',
+                          'Ver- und Entsorgung, Bergbau ',
+                          'Großhandel',
+                          'Chemie/Pharma',
+                          'Fahrzeugbau',
+                          'Verkehr, Logistik',
+                          'Sonstige Dienstleistungen',
+                        ],
+                        datasets: [
+                          {
+                            label: 'Umsätze',
+                            backgroundColor: [
+                              '#6143BF',
+                              '#1be995',
+                              '#33ADAE',
+                              '#34D633',
+                              '#B3F134',
+                              '#FFFF33',
+                              '#FEDC34',
+                              '#FFBB34',
+                              '#FF9034',
+                              '#FF3334',
+                              '#D83391',
+                            ],
+                            hoverBackgroundColor: '#a3c4d6',
+                            barThickness: 1,
+                            borderColor: '#012438',
+                            borderWidth: 5,
+                            data: [17.3, 9.0, 6.0, 4.9, 4.8, 4.5, 4.3, 3.4, 3.3, 1.5, 0.8],
+                          },
+                        ],
+                      },
+
+                      // Configuration options go here
+                      options: {
+                        scales:{
+                          yAxes:{
+                            gridLines: {
+                              display: true,
+                            },
+                            ticks: {
+                              suggestedMin: 0,
+                              suggestedMax: 2,
+                            },
+                          },
+                        },
+                        plugins: {
+                          datalabels: {
+                            align: 'start',
+                            display: 'auto',
+                            color: '#fff',
+                            padding: -25,
+                            // backgroundColor: '#f2f2f2',
+                            font: {
+                              size: 14,
+                            },
+                          },
+                        },
+                        animation: {
+                            tension: {
+                                duration: 5000,
+                                easing: 'ease',
+                                from: 1,
+                                to: 0,
+                                loop: true,
+                            },
+                        },
+                      },
+                    });
+
+
+
+
+
+                     //Chart 7 Ausgaben (Umsatz)
+                     var chartObject7 = document.getElementById('chart11').getContext('2d');
+                     var chart11 = new Chart(chartObject7, {
+                       // The type of chart we want to create
+                       type: 'doughnut',
+ 
+                       // The data for our dataset
+                       data: {
+                         labels: [
+                           'Informations- und Kommunikationstechnologien',
+                           'Elektrotechnik/Maschinenbau',
+                           'Fahrzeugbau',
+                           'Unternehmensnahe Dienstleistungen',
+                           'Sonstiges Verarbeitendes Gewerbe',
+                           'Finanzdienstleistungen ',
+                           'Sonstige Dienstleistungen',
+                           'Verkehr, Logistik',
+                           'Chemie/Pharma',
+                           'Ver- und Entsorgung, Bergbau ',
+                           'Großhandel',
+                         ],
+                         datasets: [
+                           {
+                             label: 'Ausgaben',
+                             backgroundColor: [
+                              '#6143BF',
+                              '#1be995',
+                              '#33ADAE',
+                              '#34D633',
+                              '#B3F134',
+                              '#FFFF33',
+                              '#FEDC34',
+                              '#FFBB34',
+                              '#FF9034',
+                              '#FF3334',
+                              '#D83391',
+                             ],
+                             hoverBackgroundColor: '#a3c4d6',
+                             barThickness: 5,
+                             borderColor: '#012031',
+                             borderWidth: 5,
+                             data: [1.5, 0.68, 0.84, 0.65, 0.26, 0.24, 0.19, 0.16, 0.14, 0.07, 0.07],
+                           },
+                         ],
+                       },
+ 
+                       // Configuration options go here
+                       options: {
+                         animation: {
+                             tension: {
+                                 duration: 5000,
+                                 easing: 'ease',
+                                 from: 1,
+                                 to: 0,
+                                 loop: true,
+                             },
+                         },
+                         plugins: {
+                           datalabels: {
+                             // formatter: (value, ctx) => {
+                             //     let sum = 0;
+                             //     let dataArr = ctx.chart.data.datasets[0].data;
+                             //     dataArr.map(data => {
+                             //         sum += data;
+                             //     });
+                             //     let percentage = value+"MRD €";
+                             //     return percentage;
+                             // },
+                             align: 'start',
+                             display: 'auto',
+                             color: '#fff',
+                             padding: -25,
+                             // backgroundColor: '#f2f2f2',
+                             font: {
+                               size: 14,
+                             },
+                           },
+                         },
+                       },
+                     });
+
+
+
+
+
 
 // //Chart 9 Ausgaben
 // var chartObject9 = document.getElementById('chart9').getContext('2d');

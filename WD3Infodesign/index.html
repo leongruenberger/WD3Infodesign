@@ -19,10 +19,6 @@
 	<!-- Style -->
 	<link rel="stylesheet" href="style.css">
 
-	<!-- Fullpage.js -->
-	<link rel="stylesheet" href="Fullpage.js/fullpage.css">
-	<script src="Fullpage.js/fullpage.js"></script>
-
 	
 </head>
 
@@ -402,7 +398,7 @@
 				</button>
 			</div>
 
-			<div class="chart-container">
+			<div class="chart-container" style="width: 1100px;">
 				<canvas id="chart6"></canvas>
 			</div>
 			<div class="description-container float-right" style="top: 320px">
@@ -482,12 +478,43 @@
 
 		<!-- Umsatz  -->
 		<div class="section section-8" id="page8 section-8">
+			
+			<div id="finanzLegende" class="finanzLegende">
+				<p style="color: #ddd; margin-top: 10px;">Legende</p>
+				<ul style="float: left;">
+					<li style="color: #6143BF">Finanzdienstleistungen</li>
+					<li style="color: #1be995">Informations- und Kommunikationstechnologien</li>
+					<li style="color: #33ADAE">Sonstiges Verarbeitendes Gewerbe</li>
+					<li style="color: #34D633">Elektrotechnik/Maschinenbau</li>
+					<li style="color: #B3F134">Unternehmensnahe Dienstleistungen</li>
+					<li style="color: #FFFF33">Ver- und Entsorgung, Bergbau</li>
+				</ul>
+				<li>
+					<li style="color: #FEDC34">Großhandel</li>
+					<li style="color: #FFBB34">Chemie/Pharma</li>
+					<li style="color: #FF9034">Fahrzeugbau</li>
+					<li style="color: #FF3334">Verkehr, Logistik</li>
+					<li style="color: #D83391">Sonstige Dienstleistungen</li>
+				</ul>
+			</div>
+
 			<h2 class="text-uppercase">Ausgaben und Umsatz</h2>
 			<p class="sub">von deutschen Unternehmen 2019, die KI verwenden</p>
+
+			<div class="buttons-legende">				
+				<button class="button-yo" id="colorize">Toggle Farblegende</button>
+			</div>
+
+
+
 
 			<div class="chart-container chart7">
 				<canvas id="chart7"></canvas>
 			</div>
+			<div id="chartoverlayy1" class="chart-container chart-overlay2">
+				<canvas id="chart11"></canvas>
+			</div>
+
 			<div style="width: 50px; height: 50px; position: absolute; display: inline; transform: translate(-415px, 155px);">
 				<h3>Ausgaben</h3>
 				<p class="chart-info text-uppercase" style="width: 110px !important; text-align: center;">
@@ -498,6 +525,12 @@
 			<div class="chart-container">
 				<canvas id="chart8"></canvas>
 			</div>
+
+			<div id="chartoverlayy2" class="chart-container chart-overlay1">
+				<canvas id="chart10"></canvas>
+			</div>
+
+
 			<div style="width: 50px; height: 50px; position: absolute; display: inline; transform: translate(-395px, 155px);">
 				<h3>Umsatz</h3>
 				<p class="chart-info text-uppercase" style="width: 90px !important; text-align: center;">
@@ -518,7 +551,7 @@
 					</p>
 				</div>
 
-				<div  style="width:35%;">
+				<div style="width:35%;">
 					<h4>Umsatz</h4>
 					<p>Im Gegensatz dazu erzielten die Unternehmen mit Produkten Dienstleistungen
 					mit direktem KI-Einsatz einen Umsatz von annähernd <br /><span style="font-family: 'Open Sans' !important; font-weight: 700 !important;">60 Mrd. €.</span></p> 
@@ -530,10 +563,11 @@
 					kommen. </p>
 					<p style="color: #1be995;">
 					➔ Die IKT-Branche erzielte 9,0 Mrd. € mit KI-basierten Marktangeboten.</p>
+
+					
+
 				</div>
 			</div>
-
-
 
 			<div class="section_image-wrapper">
 				<img src="Images\finanz-1.png" class="section-image" />
@@ -576,6 +610,9 @@
 	<script src="charts.js"></script>
 
 	<!-- Fullpage.js -->
+	<link rel="stylesheet" href="Fullpage.js/fullpage.css">
+	<script src="Fullpage.js/fullpage.js"></script>
+
 	<script src="Fullpage.js/fullpage-custom.js"></script>
 
 	<!-- JQUERY -->
@@ -626,6 +663,24 @@
 	<!-- particles -->
 	<!-- <script src="particles.min.js"></script>
 	<script src="particlesjs-config.json"></script> -->
+
+	
+	<script>
+		var btn = document.getElementById("colorize");
+		var chart1 = document.getElementById("chartoverlayy1");
+		var chart2 = document.getElementById("chartoverlayy2");
+		var legende = document.getElementById("finanzLegende");
+
+		btn.addEventListener("click", function() {								
+			chart1.classList.toggle("m-fadeIn");	
+			chart2.classList.toggle("m-fadeIn");					
+			legende.classList.toggle("m-slideIn");	
+
+			chart1.classList.toggle("m-fadeOut");	
+			chart2.classList.toggle("m-fadeOut");		
+			legende.classList.toggle("m-slideOut");				
+		});
+	</script>
 	
 
 </body>

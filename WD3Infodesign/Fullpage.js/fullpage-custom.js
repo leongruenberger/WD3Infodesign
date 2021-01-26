@@ -524,6 +524,7 @@
 				}
 
 
+                // AUSKOMMENTIERT, DA UPDATE FUNKTIONEN NICHT FUNKTIONIEREN, WENN CANVAS NACHGELADEN WIRD -> charts.js
                 //
                 // SEITE 6
 				// if(destination.anchor == 'page6'){
@@ -807,7 +808,7 @@
                 
                 //
                 // SEITE 8
-				if(destination.anchor == 'page8'){
+				  if(destination.anchor == 'page8'){
                     //Chart 7 Ausgaben (Umsatz)
                     var chartObject7 = document.getElementById('chart7').getContext('2d');
                     var chart7 = new Chart(chartObject7, {
@@ -888,6 +889,8 @@
                         },
                       },
                     });
+
+
 
                     //Chart 8 Umsätze Doppelseitige Balken
                     var chartObject8 = document.getElementById('chart8').getContext('2d');
@@ -971,15 +974,72 @@
                         },
                       },
                     });
+
+                    
+                    // Einfärben
+                    function colorizeFinancial() {
+
+                        var y = document.getElementById('finanzLegende');
+                    
+                        chart8.data.datasets[0].backgroundColor = 
+                        [
+                        '#6143BF',
+                        '#1be995',
+                        '#33ADAE',
+                        '#34D633',
+                        '#B3F134',
+                        '#FFFF33',
+                        '#FEDC34',
+                        '#FFBB34',
+                        '#FF9034',
+                        '#FF3334',
+                        '#D83391',
+                        ];
+                        chart8.update();
+                    
+                    
+                        // if (y.style.opacity == 0) {
+                        //   y.style.opacity = 1;
+                        // } else {
+                        //   y.style.opacity = 0;
+                        // }
+                        document.getElementById('finanzLegende').style.transform = "translateX(0)";
+                    }
+                    
+                    
+                    // In Original-Farben färben
+                    function colorizeFinancialOriginal() {
+                    
+                        var y = document.getElementById('finanzLegende');
+                    
+                        chart8.data.datasets[0].backgroundColor = 
+                        [
+                        '#225e80',
+                        '#1be995',
+                        '#225e80',
+                        '#225e80',
+                        '#225e80',
+                        '#225e80',
+                        '#225e80',
+                        '#225e80',
+                        '#225e80',
+                        '#225e80',
+                        '#225e80',
+                        ];  
+                        chart8.update();
+                        document.getElementById('finanzLegende').style.transform = "translateX(400px)";
+                    }
+
                 }
 
-                
-                //
-                // SEITE 9
-				if(destination.anchor == 'page9'){                    
 
-				}
-			}
+                
+            //     //
+            //     // SEITE 9
+			// 	if(destination.anchor == 'page9'){   
+            // 	}
+            
+            }            
 		});
 
 
